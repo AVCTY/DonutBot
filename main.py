@@ -3,7 +3,7 @@ import wavelink
 import discord
 from discord.ext import commands
 
-with open("secrets.json", "r") as f:
+with open("./Assets/secrets.json", "r") as f:
     data = json.load(f)
 
 BOT_TOKEN = data["BOT_TOKEN"]
@@ -14,7 +14,8 @@ bot = commands.Bot(command_prefix="d!", intents=intents)
 
 @bot.event
 async def on_ready():
-    print(f"Logged in as {bot.user.name}")
+    print(f"Logged in as {bot.user.name} ({bot.user.id})")
+    await bot.change_presence(activity=discord.Game(name="Listening to d!play"))
 
 @bot.event
 async def on_wavelink_node_ready(self, payload: wavelink.NodeReadyEventPayload) -> None:
