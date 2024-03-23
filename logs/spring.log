@@ -103,3 +103,4 @@ Caused by: java.io.IOException: Invalid status code for video page response: 400
 	at com.sedmelluq.discord.lavaplayer.source.youtube.DefaultYoutubeTrackDetailsLoader.loadDetails(DefaultYoutubeTrackDetailsLoader.java:36) ~[lavaplayer-2.0.4.jar!/:na]
 	... 7 common frames omitted
 
+2024-03-23T13:43:24.828+08:00  INFO 20180 --- [XNIO-1 I/O-12] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:56817 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id ifqdtk6g2ad21140
