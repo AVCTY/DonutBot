@@ -3,12 +3,13 @@ import asyncio
 import logging
 from typing import cast
 
-import wavelink
-
 import discord
 from discord.ext import commands
 
-with open("./Assets/secrets.json", "r") as f:
+import wavelink
+
+
+with open("C:/Users/User/Desktop/Portfolio/DiscordBots/DB/Assets/secrets.json", "r") as f:
     data = json.load(f)
 
 BOT_TOKEN = data["BOT_TOKEN"]
@@ -57,7 +58,7 @@ class Bot(commands.Bot):
         await player.home.send(embed=embed)
 
 
-bot = Bot()
+bot: Bot = Bot()
 
 # Play command
 @bot.command()
@@ -112,10 +113,37 @@ async def play(ctx: commands.Context, query: str) -> None:
 
     if not player.playing:
         # Play now since we aren't playing anything...
-        await player.play(player.queue.get(), volume=30)
+        await player.play(player.queue.get(), volume=50)
 
 
-# Skip command
+# View the Player Queue command
+@bot.command(aliases=["q"])
+async def queue(ctx: commands.Context) -> None:
+    """Views the queue to see what songs are queued up"""
+    player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+    res = []
+    i = 1
+
+    if not player:
+        return
+    
+    if player.queue:
+        for item in player.queue:
+            # time conversion for item length
+            mill_sec = item.length
+            total_sec = mill_sec / 1000
+            mins = int(total_sec // 60)
+            secs = int(total_sec % 60)
+
+            song = f"**{i}**. {item.title} - *{mins}:{secs}*"
+            res.append(song)
+            i += 1
+        await ctx.send("\n".join(res))
+    else:
+        await ctx.send(f"The queue is currently empty")
+
+
+# Skip song command
 @bot.command()
 async def skip(ctx: commands.Context) -> None:
     """Skip the current song."""
@@ -127,7 +155,32 @@ async def skip(ctx: commands.Context) -> None:
     await ctx.message.add_reaction("\u2705")
 
 
-# Disconnect command
+# Pause and Resume Player command
+@bot.command(name="toggle", aliases=["pause", "resume"])
+async def pause_resume(ctx: commands.Context) -> None:
+    """Pause or Resume the Player depending on its current state."""
+    player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+
+    if not player:
+        return
+    
+    await player.pause(not player.paused)
+    await ctx.message.add_reaction("\u2705")
+
+
+# Player volume control command
+@bot.command()
+async def volume(ctx: commands.Context, value: int) -> None:
+    """Change the volume of the player."""
+    player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+    if not player:
+        return
+
+    await player.set_volume(value)
+    await ctx.message.add_reaction("\u2705")
+
+
+# Disconnect Player command
 @bot.command(aliases=["dc"])
 async def disconnect(ctx: commands.Context) -> None:
     """Disconnect the Player."""
@@ -138,4 +191,9 @@ async def disconnect(ctx: commands.Context) -> None:
     await player.disconnect()
     await ctx.message.add_reaction("\u2705")
 
-bot.run(BOT_TOKEN)
+
+async def main() -> None:
+    async with bot:
+        await bot.start(BOT_TOKEN)
+
+asyncio.run(main())
