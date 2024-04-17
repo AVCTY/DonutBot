@@ -139,8 +139,10 @@ async def queue(ctx: commands.Context) -> None:
             res.append(song)
             i += 1
         await ctx.send("\n".join(res))
+    elif not player.queue:
+        await ctx.send("The queue is currently empty")
     else:
-        await ctx.send(f"The queue is currently empty")
+        await ctx.send("Something went wrong...")
 
 
 # Skip song command
