@@ -14,6 +14,22 @@ with open("C:/Users/User/Desktop/Portfolio/DiscordBots/DB/Assets/secrets.json", 
 
 BOT_TOKEN = data["BOT_TOKEN"]
 
+# Function to calculate milliseconds into minutes and seconds
+def ms_convert(duration: int) -> list[int]:
+    """
+    Time converter to convert milliseconds into a list of minutes and seconds
+    
+    Returns [minutes: int, seconds: int]
+    Type: <class 'list'>
+    """
+    # time conversion for item length
+    mill_sec = duration
+    total_sec = mill_sec / 1000
+    mins = int(total_sec // 60)
+    secs = int(total_sec % 60)
+
+    return [mins, secs]
+
 # Bot class
 class Bot(commands.Bot):
     def __init__(self) -> None:
@@ -107,40 +123,104 @@ async def play(ctx: commands.Context, query: str) -> None:
         added: int = await player.queue.put_wait(tracks)
         await ctx.send(f"Added the playlist **`{tracks.name}`** ({added} songs) to the queue.")
     else:
-        track: wavelink.Playable = tracks[0]
-        await player.queue.put_wait(track)
-        await ctx.send(f"Added **`{track}`** to the queue.")
+        message = "Top 5 Results:\n"
+        results = tracks[:5] # gets the top 5 results from tracks list
+
+        # Get the first 5 results
+        for index, song in enumerate(results):
+            # time conversion for item length
+            # song_length[0] is minutes and song_length[1] is seconds
+            song_length = ms_convert(song.length)
+
+            message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
+
+        message += "\nEnter a number for the song you want to choose:"
+        await ctx.send(message)
+
+        def check(msg):
+            return msg.author == ctx.author and msg.channel == ctx.channel
+        
+        try:
+            choice_msg = await bot.wait_for("message", check=check, timeout=20)
+            choice = int(choice_msg.content)
+
+            if choice < 1 or choice > 5:
+                await ctx.send("Invalid choice, enter number from 1 to 5 only")
+                return
+            
+            track: wavelink.Playable = tracks[choice - 1]
+            await player.queue.put_wait(track)
+            await ctx.send(f"Added **`{track}`** to the queue.")
+        except asyncio.TimeoutError:
+            await ctx.send("You took too long to respond.")
 
     if not player.playing:
         # Play now since we aren't playing anything...
-        await player.play(player.queue.get(), volume=50)
+        await player.play(player.queue.get(), volume=10)
 
 
 # View the Player Queue command
 @bot.command(aliases=["q"])
-async def queue(ctx: commands.Context) -> None:
+async def queue(ctx: commands.Context, page_num=None) -> None:
     """Views the queue to see what songs are queued up"""
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
-    res = []
-    i = 1
 
     if not player:
         return
     
+    # if queue exists
     if player.queue:
-        for item in player.queue:
-            # time conversion for item length
-            mill_sec = item.length
-            total_sec = mill_sec / 1000
-            mins = int(total_sec // 60)
-            secs = int(total_sec % 60)
+        # if queue is longer than 10
+        if player.queue.count > 10:
+            # paginating the queues for every 10 tracks
+            paginated_queue = [player.queue[i:i+10] for i in range(0, len(player.queue), 10)]
 
-            song = f"**{i}**. {item.title} - *{mins}:{secs}*"
-            res.append(song)
-            i += 1
-        await ctx.send("\n".join(res))
+            # if page number is none, return first page as default
+            if page_num == None:
+                # message for queue pages
+                message = f"Queue: **1** of **{len(paginated_queue)}** pages\n"
+                
+                # gets the tracks from the first page
+                for index, song in enumerate(paginated_queue[0]):
+                    # time conversion for item length
+                    song_length = ms_convert(song.length)
+
+                    message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
+                await ctx.send(message)
+            # if page number is a digit and isn't 0 return that page in the queue
+            elif page_num.isdigit() and page_num != 0:
+                #ensure that the page_num input is integer
+                page_num = int(page_num)
+
+                message = f"Queue: **{page_num}** of **{len(paginated_queue)}** pages\n"
+
+                # gets the tracks from the first page
+                for index, song in enumerate(paginated_queue[page_num-1]):
+                    # time conversion for item length
+                    song_length = ms_convert(song.length)
+
+                    message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
+                await ctx.send(message)
+            else:
+                await ctx.send("Invalid page number")
+        elif player.queue.count > 0 and player.queue.count <= 10:
+            # set message to 1 of 1 page in queue
+            message = f"Queue: 1 of {len(player.queue)}\n"
+
+            # loop through queue add tracks to message
+            for index, song in enumerate(player.queue):
+                song_length = ms_convert(song.length)
+
+                message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
+
+            # send formatted message for queue
+            await ctx.send(message)
+        else:
+            return
+    elif not player.queue:
+        await ctx.send("The queue is currently empty")
     else:
-        await ctx.send(f"The queue is currently empty")
+        await ctx.send("Something went wrong...")
 
 
 # Skip song command
@@ -190,6 +270,18 @@ async def disconnect(ctx: commands.Context) -> None:
 
     await player.disconnect()
     await ctx.message.add_reaction("\u2705")
+
+
+# tester command
+@bot.command()
+async def test(ctx: commands.Context, query=None):
+    if query == None:
+        await ctx.send("Hello, there is nothing")
+    elif query != None:
+        if query.isdigit() and query != 0:
+            await ctx.send(f"Hello, there is a number: {query}.")
+        else:
+            await ctx.send(f"Hello, there is a message: {query}.")
 
 
 async def main() -> None:
