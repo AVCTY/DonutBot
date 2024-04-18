@@ -276,12 +276,12 @@ async def disconnect(ctx: commands.Context) -> None:
 @bot.command()
 async def test(ctx: commands.Context, query=None):
     if query == None:
-        await ctx.send("Hello, there is nothing")
+        await ctx.send(f"Hello, there {ctx.author.mention}!")
     elif query != None:
         if query.isdigit() and query != 0:
-            await ctx.send(f"Hello, there is a number: {query}.")
+            await ctx.send(f"Hello, there {ctx.author.mention}! Your number is: {query}.")
         else:
-            await ctx.send(f"Hello, there is a message: {query}.")
+            await ctx.send(f"Hello, there {ctx.author.mention}! Your query is: {query}.")
 
 
 async def main() -> None:
