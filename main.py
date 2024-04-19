@@ -2,6 +2,7 @@ import json
 import asyncio
 import logging
 from typing import cast
+from time_converter import ms_convert
 
 import discord
 from discord.ext import commands
@@ -13,22 +14,6 @@ with open("C:/Users/User/Desktop/Portfolio/DiscordBots/DB/Assets/secrets.json", 
     data = json.load(f)
 
 BOT_TOKEN = data["BOT_TOKEN"]
-
-# Function to calculate milliseconds into minutes and seconds
-def ms_convert(duration: int) -> list[int]:
-    """
-    Time converter to convert milliseconds into a list of minutes and seconds
-    
-    Returns [minutes: int, seconds: int]
-    Type: <class 'list'>
-    """
-    # time conversion for item length
-    mill_sec = duration
-    total_sec = mill_sec / 1000
-    mins = int(total_sec // 60)
-    secs = int(total_sec % 60)
-
-    return [mins, secs]
 
 # Bot class
 class Bot(commands.Bot):
@@ -132,7 +117,7 @@ async def play(ctx: commands.Context, query: str) -> None:
             # song_length[0] is minutes and song_length[1] is seconds
             song_length = ms_convert(song.length)
 
-            message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
+            message += f"**{index+1}**. {song.title} - *{song_length}*\n"
 
         message += "\nEnter a number for the song you want to choose:"
         await ctx.send(message)
@@ -190,7 +175,7 @@ async def queue(ctx: commands.Context, page_num=None) -> None:
                     # time conversion for item length
                     song_length = ms_convert(song.length)
 
-                    message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
+                    message += f"**{index+1}**. {song.title} - *{song_length}*\n"
                 await ctx.send(message)
             # if page number is a digit and isn't 0 return that page in the queue
             elif page_num != 0:
@@ -201,7 +186,7 @@ async def queue(ctx: commands.Context, page_num=None) -> None:
                     # time conversion for item length
                     song_length = ms_convert(song.length)
 
-                    message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
+                    message += f"**{index+1}**. {song.title} - *{song_length}*\n"
                 await ctx.send(message)
             else:
                 await ctx.send("Invalid page number")
