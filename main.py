@@ -164,6 +164,11 @@ async def play(ctx: commands.Context, query: str) -> None:
 async def queue(ctx: commands.Context, page_num=None) -> None:
     """Views the queue to see what songs are queued up"""
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+    #ensure that the page_num input is integer
+    if page_num != None and page_num.isdigit():
+        page_num = int(page_num)
+    elif not page_num.isdigit() and page_num != None:
+        await ctx.send("Page number must be a number. E.g: 1...etc")
 
     if not player:
         return
@@ -188,10 +193,7 @@ async def queue(ctx: commands.Context, page_num=None) -> None:
                     message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
                 await ctx.send(message)
             # if page number is a digit and isn't 0 return that page in the queue
-            elif page_num.isdigit() and page_num != 0:
-                #ensure that the page_num input is integer
-                page_num = int(page_num)
-
+            elif page_num != 0:
                 message = f"Queue: **{page_num}** of **{len(paginated_queue)}** pages\n"
 
                 # gets the tracks from the first page
@@ -204,17 +206,22 @@ async def queue(ctx: commands.Context, page_num=None) -> None:
             else:
                 await ctx.send("Invalid page number")
         elif player.queue.count > 0 and player.queue.count <= 10:
-            # set message to 1 of 1 page in queue
-            message = f"Queue: 1 of {len(player.queue)}\n"
+            if page_num != None and page_num != 1:
+                await ctx.send(f"No available pages for page: {page_num}")
+            elif page_num == None or page_num == 1:
+                # set message to 1 of 1 page in queue
+                message = f"Queue: 1 of 1 pages\n"
 
-            # loop through queue add tracks to message
-            for index, song in enumerate(player.queue):
-                song_length = ms_convert(song.length)
+                # loop through queue add tracks to message
+                for index, song in enumerate(player.queue):
+                    song_length = ms_convert(song.length)
 
-                message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
+                    message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
 
-            # send formatted message for queue
-            await ctx.send(message)
+                # send formatted message for queue
+                await ctx.send(message)
+            else:
+                await ctx.send("Invalid page number.")
         else:
             return
     elif not player.queue:
@@ -261,7 +268,7 @@ async def volume(ctx: commands.Context, value: int) -> None:
 
 
 # Disconnect Player command
-@bot.command(aliases=["dc"])
+@bot.command(aliases=["dc", "stop", "leave", "bye"])
 async def disconnect(ctx: commands.Context) -> None:
     """Disconnect the Player."""
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
