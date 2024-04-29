@@ -3,6 +3,7 @@ import asyncio
 import logging
 from typing import cast
 from time_converter import ms_convert
+from queue_menu import QueueMenu
 
 import discord
 from discord.ext import commands
@@ -10,7 +11,7 @@ from discord.ext import commands
 import wavelink
 
 
-with open("C:/Users/User/Desktop/Portfolio/DiscordBots/DB/Assets/secrets.json", "r") as f:
+with open("secrets.json", "r") as f:
     data = json.load(f)
 
 BOT_TOKEN = data["BOT_TOKEN"]
@@ -45,7 +46,7 @@ class Bot(commands.Bot):
         track: wavelink.Playable = payload.track
 
         embed: discord.Embed = discord.Embed(title="Now Playing")
-        embed.description = f"**[{track.title}]({track.uri})** by `{track.author}`"
+        embed.description = f"**[{track.title}]({track.uri})**  - *{ms_convert(track.length)}* by `{track.author}`"
 
         if track.artwork:
             embed.set_image(url=track.artwork)
@@ -63,7 +64,7 @@ bot: Bot = Bot()
 
 # Play command
 @bot.command()
-async def play(ctx: commands.Context, query: str) -> None:
+async def play(ctx: commands.Context, *, query: str) -> None:
     if not ctx.guild:
         return
     
@@ -117,7 +118,7 @@ async def play(ctx: commands.Context, query: str) -> None:
             # song_length[0] is minutes and song_length[1] is seconds
             song_length = ms_convert(song.length)
 
-            message += f"**{index+1}**. {song.title} - *{song_length}*\n"
+            message += f"**{index+1}**. **{song.title}** - *{song_length}*\n"
 
         message += "\nEnter a number for the song you want to choose:"
         await ctx.send(message)
@@ -126,7 +127,7 @@ async def play(ctx: commands.Context, query: str) -> None:
             return msg.author == ctx.author and msg.channel == ctx.channel
         
         try:
-            choice_msg = await bot.wait_for("message", check=check, timeout=20)
+            choice_msg = await bot.wait_for("message", check=check, timeout=30)
             choice = int(choice_msg.content)
 
             if choice < 1 or choice > 5:
@@ -146,73 +147,83 @@ async def play(ctx: commands.Context, query: str) -> None:
 
 # View the Player Queue command
 @bot.command(aliases=["q"])
-async def queue(ctx: commands.Context, page_num=None) -> None:
+async def queue(ctx: commands.Context) -> None:
     """Views the queue to see what songs are queued up"""
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
-    #ensure that the page_num input is integer
-    if page_num != None and page_num.isdigit():
-        page_num = int(page_num)
-    elif not page_num.isdigit() and page_num != None:
-        await ctx.send("Page number must be a number. E.g: 1...etc")
+    tracks = []
 
     if not player:
         return
     
-    # if queue exists
+    # check if queue exists
     if player.queue:
-        # if queue is longer than 10
-        if player.queue.count > 10:
-            # paginating the queues for every 10 tracks
-            paginated_queue = [player.queue[i:i+10] for i in range(0, len(player.queue), 10)]
+        # add formatted tracks to tracks list
+        for index, song in enumerate(player.queue):
+            tracks.append(f"**{index+1}**. **[{song.title}]({song.uri})** - *{ms_convert(song.length)}*")
 
-            # if page number is none, return first page as default
-            if page_num == None:
-                # message for queue pages
-                message = f"Queue: **1** of **{len(paginated_queue)}** pages\n"
-                
-                # gets the tracks from the first page
-                for index, song in enumerate(paginated_queue[0]):
-                    # time conversion for item length
-                    song_length = ms_convert(song.length)
-
-                    message += f"**{index+1}**. {song.title} - *{song_length}*\n"
-                await ctx.send(message)
-            # if page number is a digit and isn't 0 return that page in the queue
-            elif page_num != 0:
-                message = f"Queue: **{page_num}** of **{len(paginated_queue)}** pages\n"
-
-                # gets the tracks from the first page
-                for index, song in enumerate(paginated_queue[page_num-1]):
-                    # time conversion for item length
-                    song_length = ms_convert(song.length)
-
-                    message += f"**{index+1}**. {song.title} - *{song_length}*\n"
-                await ctx.send(message)
-            else:
-                await ctx.send("Invalid page number")
-        elif player.queue.count > 0 and player.queue.count <= 10:
-            if page_num != None and page_num != 1:
-                await ctx.send(f"No available pages for page: {page_num}")
-            elif page_num == None or page_num == 1:
-                # set message to 1 of 1 page in queue
-                message = f"Queue: 1 of 1 pages\n"
-
-                # loop through queue add tracks to message
-                for index, song in enumerate(player.queue):
-                    song_length = ms_convert(song.length)
-
-                    message += f"**{index+1}**. {song.title} - *{song_length[0]}:{song_length[1]}*\n"
-
-                # send formatted message for queue
-                await ctx.send(message)
-            else:
-                await ctx.send("Invalid page number.")
-        else:
-            return
+        # show queue menu for every 10 tracks
+        qm = QueueMenu(tracks)
+        await qm.start(ctx)
     elif not player.queue:
         await ctx.send("The queue is currently empty")
     else:
         await ctx.send("Something went wrong...")
+
+
+# Move track to top in queue command
+@bot.command()
+async def top(ctx: commands.Context, index: int = 0):
+    """
+    Sets the requested song from queue to the top of the queue
+    
+    E.g: top(3) brings the third song in queue to the top
+    """
+    player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+
+    if type(index) != int:
+        await ctx.send("Track index must be a number. e.g: 3")
+        return
+    
+    if type(index) == int and index > 0:
+        # inserts requested track at the top of the queue
+        player.queue.put_at(0, player.queue[index-1])
+        player.queue.delete(index)
+        await ctx.send(f"Moved ***[{player.queue[0].title}]({player.queue[0].uri})*** to the top of the queue.")
+    elif index <= 0:
+        await ctx.send("Track index must be more than 0")
+
+
+# Queue shuffle command
+@bot.command()
+async def shuffle(ctx: commands.Context):
+    """Shuffles the queue to a randomized order"""
+    player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+
+    if not player:
+        await ctx.send("I am not in a voice channel.")
+        return
+    
+    if not player.queue:
+        await ctx.send("The queue is empty.")
+    else:
+        player.queue.shuffle()
+        await ctx.send("The queue has been shuffled.")
+
+
+# Queue clear command
+@bot.command()
+async def clear(ctx: commands.Context):
+    """Clear the queue of any tracks that was queued up"""
+    player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+
+    if not player:
+        await ctx.send("I am not in a voice channel.")
+
+    if not player.queue:
+        await ctx.send("The queue is empty.")
+    else:
+        player.queue.clear()
+        await ctx.send("The queue has been cleared.")
 
 
 # Skip song command
