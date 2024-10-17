@@ -564,3 +564,643 @@ com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Please sign in
 2024-10-17T12:12:15.841+08:00  INFO 22920 --- [Lavalink] [pool-2-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
 2024-10-17T12:13:39.629+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/dw5az3bwn5xcaqar/players/754373406887116810, client=127.0.0.1
 2024-10-17T12:13:49.650+08:00  INFO 22920 --- [Lavalink] [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:62173 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id dw5az3bwn5xcaqar
+2024-10-17T14:12:54.421+08:00  INFO 7208 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.0.8 using Java 21.0.4 with PID 7208 (C:\Users\arthu\Desktop\devArthur\DonutBot\Lavalink.jar started by arthu in C:\Users\arthu\Desktop\devArthur\DonutBot)
+2024-10-17T14:12:54.427+08:00  INFO 7208 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T14:12:55.528+08:00  INFO 7208 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version 1.8.3
+2024-10-17T14:12:55.555+08:00  INFO 7208 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded youtube-plugin-1.8.3.jar (16 classes)
+2024-10-17T14:12:55.813+08:00  INFO 7208 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 1.983 seconds (process running for 2.583)
+2024-10-17T14:12:55.887+08:00  INFO 7208 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.8
+	Build time:     20.09.2024 20:20:10 UTC
+	Branch          HEAD
+	Commit:         2946608
+	Commit time:    20.09.2024 20:17:58 UTC
+	JVM:            21.0.4
+	Lavaplayer      2.2.2
+
+2024-10-17T14:12:55.899+08:00  INFO 7208 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T14:12:56.589+08:00  WARN 7208 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-10-17T14:12:56.612+08:00  INFO 7208 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-10-17T14:12:56.614+08:00  INFO 7208 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 708 ms
+2024-10-17T14:12:56.723+08:00  WARN 7208 --- [Lavalink] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'youtubeRestHandler' defined in URL [jar:file:C:/Users/arthu/Desktop/devArthur/DonutBot/plugins/youtube-plugin-1.8.3.jar!/dev/lavalink/youtube/plugin/YoutubeRestHandler.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'audioPlayerManagerSupplier' defined in class path resource [lavalink/server/config/AudioPlayerConfiguration.class]: Unsatisfied dependency expressed through method 'audioPlayerManagerSupplier' parameter 1: Error creating bean with name 'serverConfig': Could not bind properties to 'ServerConfig' : prefix=lavalink.server, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-10-17T14:12:56.727+08:00 ERROR 7208 --- [Lavalink] [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'youtubeRestHandler' defined in URL [jar:file:C:/Users/arthu/Desktop/devArthur/DonutBot/plugins/youtube-plugin-1.8.3.jar!/dev/lavalink/youtube/plugin/YoutubeRestHandler.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'audioPlayerManagerSupplier' defined in class path resource [lavalink/server/config/AudioPlayerConfiguration.class]: Unsatisfied dependency expressed through method 'audioPlayerManagerSupplier' parameter 1: Error creating bean with name 'serverConfig': Could not bind properties to 'ServerConfig' : prefix=lavalink.server, ignoreInvalidFields=false, ignoreUnknownFields=true
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:149) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at lavalink.server.Launcher.launchMain(Launcher.kt:164) ~[classes!/:4.0.8]
+	at lavalink.server.Launcher.main(Launcher.kt:126) ~[classes!/:4.0.8]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.0.8]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.0.8]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.0.8]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.0.8]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'audioPlayerManagerSupplier' defined in class path resource [lavalink/server/config/AudioPlayerConfiguration.class]: Unsatisfied dependency expressed through method 'audioPlayerManagerSupplier' parameter 1: Error creating bean with name 'serverConfig': Could not bind properties to 'ServerConfig' : prefix=lavalink.server, ignoreInvalidFields=false, ignoreUnknownFields=true
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	... 25 common frames omitted
+Caused by: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'serverConfig': Could not bind properties to 'ServerConfig' : prefix=lavalink.server, ignoreInvalidFields=false, ignoreUnknownFields=true
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:99) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:79) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	... 39 common frames omitted
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'lavalink.server.youtube-config' to lavalink.server.config.YoutubeConfig
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:391) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:354) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:477) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:99) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:87) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:63) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$6(Binder.java:480) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647) ~[na:na]
+	at org.springframework.boot.context.properties.bind.Binder.fromDataObjectBinders(Binder.java:488) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$7(Binder.java:479) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:597) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:583) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:479) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:418) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:350) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:339) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:269) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:256) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:94) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:96) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	... 53 common frames omitted
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [lavalink.server.config.YoutubeConfig]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:119) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:101) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:93) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindProperty(Binder.java:463) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:407) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:350) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	... 79 common frames omitted
+
+2024-10-17T14:12:56.749+08:00  INFO 7208 --- [Lavalink] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-17T14:12:56.781+08:00 ERROR 7208 --- [Lavalink] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'lavalink.server.youtube-config' to lavalink.server.config.YoutubeConfig:
+
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [lavalink.server.config.YoutubeConfig]
+
+Action:
+
+Update your application's configuration
+
+2024-10-17T14:15:28.923+08:00  INFO 5236 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.0.8 using Java 21.0.4 with PID 5236 (C:\Users\arthu\Desktop\devArthur\DonutBot\Lavalink.jar started by arthu in C:\Users\arthu\Desktop\devArthur\DonutBot)
+2024-10-17T14:15:28.930+08:00  INFO 5236 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T14:15:29.999+08:00  INFO 5236 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version 1.8.3
+2024-10-17T14:15:30.026+08:00  INFO 5236 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded youtube-plugin-1.8.3.jar (16 classes)
+2024-10-17T14:15:30.250+08:00  INFO 5236 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 1.903 seconds (process running for 2.474)
+2024-10-17T14:15:30.337+08:00  INFO 5236 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.8
+	Build time:     20.09.2024 20:20:10 UTC
+	Branch          HEAD
+	Commit:         2946608
+	Commit time:    20.09.2024 20:17:58 UTC
+	JVM:            21.0.4
+	Lavaplayer      2.2.2
+
+2024-10-17T14:15:30.348+08:00  INFO 5236 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T14:15:31.017+08:00  WARN 5236 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-10-17T14:15:31.040+08:00  INFO 5236 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-10-17T14:15:31.041+08:00  INFO 5236 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 686 ms
+2024-10-17T14:15:31.160+08:00  WARN 5236 --- [Lavalink] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'youtubeRestHandler' defined in URL [jar:file:C:/Users/arthu/Desktop/devArthur/DonutBot/plugins/youtube-plugin-1.8.3.jar!/dev/lavalink/youtube/plugin/YoutubeRestHandler.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'audioPlayerManagerSupplier' defined in class path resource [lavalink/server/config/AudioPlayerConfiguration.class]: Unsatisfied dependency expressed through method 'audioPlayerManagerSupplier' parameter 1: Error creating bean with name 'serverConfig': Could not bind properties to 'ServerConfig' : prefix=lavalink.server, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-10-17T14:15:31.164+08:00 ERROR 5236 --- [Lavalink] [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'youtubeRestHandler' defined in URL [jar:file:C:/Users/arthu/Desktop/devArthur/DonutBot/plugins/youtube-plugin-1.8.3.jar!/dev/lavalink/youtube/plugin/YoutubeRestHandler.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'audioPlayerManagerSupplier' defined in class path resource [lavalink/server/config/AudioPlayerConfiguration.class]: Unsatisfied dependency expressed through method 'audioPlayerManagerSupplier' parameter 1: Error creating bean with name 'serverConfig': Could not bind properties to 'ServerConfig' : prefix=lavalink.server, ignoreInvalidFields=false, ignoreUnknownFields=true
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:149) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at lavalink.server.Launcher.launchMain(Launcher.kt:164) ~[classes!/:4.0.8]
+	at lavalink.server.Launcher.main(Launcher.kt:126) ~[classes!/:4.0.8]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.0.8]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.0.8]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.0.8]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.0.8]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'audioPlayerManagerSupplier' defined in class path resource [lavalink/server/config/AudioPlayerConfiguration.class]: Unsatisfied dependency expressed through method 'audioPlayerManagerSupplier' parameter 1: Error creating bean with name 'serverConfig': Could not bind properties to 'ServerConfig' : prefix=lavalink.server, ignoreInvalidFields=false, ignoreUnknownFields=true
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	... 25 common frames omitted
+Caused by: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'serverConfig': Could not bind properties to 'ServerConfig' : prefix=lavalink.server, ignoreInvalidFields=false, ignoreUnknownFields=true
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:99) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:79) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.9.jar!/:6.1.9]
+	... 39 common frames omitted
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'lavalink.server.youtube-config' to lavalink.server.config.YoutubeConfig
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:391) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:354) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:477) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:99) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:87) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:63) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$6(Binder.java:480) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647) ~[na:na]
+	at org.springframework.boot.context.properties.bind.Binder.fromDataObjectBinders(Binder.java:488) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$7(Binder.java:479) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:597) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:583) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:479) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:418) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:350) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:339) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:269) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:256) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:94) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:96) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	... 53 common frames omitted
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [lavalink.server.config.YoutubeConfig]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:119) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:101) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:93) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindProperty(Binder.java:463) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:407) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:350) ~[spring-boot-3.3.0.jar!/:3.3.0]
+	... 79 common frames omitted
+
+2024-10-17T14:15:31.184+08:00  INFO 5236 --- [Lavalink] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-17T14:15:31.215+08:00 ERROR 5236 --- [Lavalink] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'lavalink.server.youtube-config' to lavalink.server.config.YoutubeConfig:
+
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [lavalink.server.config.YoutubeConfig]
+
+Action:
+
+Update your application's configuration
+
+2024-10-17T14:44:34.330+08:00  INFO 15208 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.0.8 using Java 21.0.4 with PID 15208 (C:\Users\arthu\Desktop\devArthur\DonutBot\Lavalink.jar started by arthu in C:\Users\arthu\Desktop\devArthur\DonutBot)
+2024-10-17T14:44:34.339+08:00  INFO 15208 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T14:44:35.530+08:00  INFO 15208 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version 1.8.3
+2024-10-17T14:44:35.551+08:00  INFO 15208 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded youtube-plugin-1.8.3.jar (16 classes)
+2024-10-17T14:44:35.778+08:00  INFO 15208 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 2.131 seconds (process running for 2.707)
+2024-10-17T14:44:35.859+08:00  INFO 15208 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.8
+	Build time:     20.09.2024 20:20:10 UTC
+	Branch          HEAD
+	Commit:         2946608
+	Commit time:    20.09.2024 20:17:58 UTC
+	JVM:            21.0.4
+	Lavaplayer      2.2.2
+
+2024-10-17T14:44:35.869+08:00  INFO 15208 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T14:44:36.573+08:00  WARN 15208 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-10-17T14:44:36.598+08:00  INFO 15208 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-10-17T14:44:36.598+08:00  INFO 15208 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 724 ms
+2024-10-17T14:44:37.809+08:00  INFO 15208 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-10-17T14:44:38.250+08:00  INFO 15208 --- [Lavalink] [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_TESTSUITE, WEB, TVHTML5_SIMPLY_EMBEDDED_PLAYER 
+2024-10-17T14:44:38.675+08:00  INFO 15208 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : ==================================================
+2024-10-17T14:44:38.675+08:00  INFO 15208 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : !!! DO NOT AUTHORISE WITH YOUR MAIN ACCOUNT, USE A BURNER !!!
+2024-10-17T14:44:38.675+08:00  INFO 15208 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : OAUTH INTEGRATION: To give youtube-source access to your account, go to https://www.google.com/device and enter code VQQ-FML-KMRY
+2024-10-17T14:44:38.676+08:00  INFO 15208 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : !!! DO NOT AUTHORISE WITH YOUR MAIN ACCOUNT, USE A BURNER !!!
+2024-10-17T14:44:38.677+08:00  INFO 15208 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : ==================================================
+2024-10-17T14:44:38.875+08:00  INFO 15208 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2024-10-17T14:44:38.876+08:00  INFO 15208 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2024-10-17T14:44:38.879+08:00  INFO 15208 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-10-17T14:44:38.889+08:00  INFO 15208 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-10-17T14:44:38.932+08:00  WARN 15208 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-10-17T14:44:39.259+08:00  INFO 15208 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2024-10-17T14:44:39.269+08:00  INFO 15208 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2024-10-17T14:44:39.280+08:00  INFO 15208 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2024-10-17T14:44:39.380+08:00  INFO 15208 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2024-10-17T14:44:39.461+08:00  INFO 15208 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 2333 (http) with context path '/'
+2024-10-17T14:44:39.468+08:00  INFO 15208 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 3.68 seconds (process running for 6.396)
+2024-10-17T14:44:39.469+08:00  INFO 15208 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-10-17T14:45:43.699+08:00  INFO 15208 --- [Lavalink] [youtube-source-token-poller] d.l.youtube.http.YoutubeOauth2Handler    : OAUTH INTEGRATION: Token retrieved successfully. Store your refresh token as this can be reused. (1//0ghiFy8QtRDKGCgYIARAAGBASNwF-L9IrlU4YjOqyEWmEZNUvyfjInS2QUlBfRve1dKTUFLTFHnxhteqHx2Jrtl5l-Vl8wnTSy84)
+2024-10-17T14:46:31.838+08:00  INFO 23472 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.0.8 using Java 21.0.4 with PID 23472 (C:\Users\arthu\Desktop\devArthur\DonutBot\Lavalink.jar started by arthu in C:\Users\arthu\Desktop\devArthur\DonutBot)
+2024-10-17T14:46:31.844+08:00  INFO 23472 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T14:46:33.065+08:00  INFO 23472 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version 1.8.3
+2024-10-17T14:46:33.096+08:00  INFO 23472 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded youtube-plugin-1.8.3.jar (16 classes)
+2024-10-17T14:46:33.324+08:00  INFO 23472 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 2.061 seconds (process running for 2.649)
+2024-10-17T14:46:33.399+08:00  INFO 23472 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.8
+	Build time:     20.09.2024 20:20:10 UTC
+	Branch          HEAD
+	Commit:         2946608
+	Commit time:    20.09.2024 20:17:58 UTC
+	JVM:            21.0.4
+	Lavaplayer      2.2.2
+
+2024-10-17T14:46:33.409+08:00  INFO 23472 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T14:46:34.148+08:00  WARN 23472 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-10-17T14:46:34.171+08:00  INFO 23472 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-10-17T14:46:34.171+08:00  INFO 23472 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+2024-10-17T14:46:35.413+08:00  INFO 23472 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-10-17T14:46:35.825+08:00  INFO 23472 --- [Lavalink] [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_TESTSUITE, WEB, TVHTML5_SIMPLY_EMBEDDED_PLAYER 
+2024-10-17T14:46:36.027+08:00  INFO 23472 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : YouTube access token refreshed successfully
+2024-10-17T14:46:36.228+08:00  INFO 23472 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2024-10-17T14:46:36.229+08:00  INFO 23472 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2024-10-17T14:46:36.233+08:00  INFO 23472 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-10-17T14:46:36.242+08:00  INFO 23472 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-10-17T14:46:36.279+08:00  WARN 23472 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-10-17T14:46:36.630+08:00  INFO 23472 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2024-10-17T14:46:36.643+08:00  INFO 23472 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2024-10-17T14:46:36.659+08:00  INFO 23472 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2024-10-17T14:46:36.773+08:00  INFO 23472 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2024-10-17T14:46:36.854+08:00  INFO 23472 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 2333 (http) with context path '/'
+2024-10-17T14:46:36.860+08:00  INFO 23472 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 3.529 seconds (process running for 6.185)
+2024-10-17T14:46:36.862+08:00  INFO 23472 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-10-17T14:46:53.420+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T14:46:53.421+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T14:46:53.423+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-17T14:46:53.453+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:54903
+2024-10-17T14:46:53.477+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T14:46:53.552+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T14:46:53.831+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T14:46:53.855+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T14:48:03.696+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "bba92d84f687ea31325f08cb689a2ad8", "token": "da370dbf95775058", "endpoint": "singapore11111.discord.media:443"}}
+2024-10-17T14:48:03.713+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:keshi soft spot"
+2024-10-17T14:48:04.339+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: keshi soft spot
+2024-10-17T14:48:04.356+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:keshi%20soft%20spot, client=127.0.0.1
+2024-10-17T14:48:07.842+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6gMACVNvZnQgU3BvdAAFa2VzaGkAAAAAAAMgyAALdlowSW9nZGlwNDAAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj12WjBJb2dkaXA0MAEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hSXpYTkVscEkxUjlPeE1DdVYwbEgtcUlfN0FzTzJHT3I4U2NZS2llaXpWWTE4WnBtOUY5b1MzV2N6R19jdmNlX0NZV1V6Zlc0OWJxUDNzaD13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T14:48:08.482+08:00  INFO 23472 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] d.l.y.http.YoutubeAccessTokenTracker     : Updating YouTube visitor id succeeded, new one is Cgtzc0JiWGVuSFMySSio5sK4BjIKCgJNWRIEGgAgMjoMCAEguYbNvYXlrIhn, next update will be after 600 seconds.
+2024-10-17T14:48:09.704+08:00  INFO 23472 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda/0x000001f640861c58@412c5e21
+2024-10-17T14:48:09.717+08:00  INFO 23472 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library libmpg123-0: successfully loaded.
+2024-10-17T14:48:09.718+08:00  INFO 23472 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library connector: loading with filter null
+2024-10-17T14:48:09.747+08:00  INFO 23472 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library connector: successfully loaded.
+2024-10-17T14:50:09.031+08:00  WARN 23472 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Suspicious exception for playback of vZ0Iogdip40
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something went wrong when decoding the track.
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:102) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.2.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.RuntimeException: java.net.UnknownHostException: No such host is known (rr2---sn-uh-3jie.googlevideo.com)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaStreamingFile.provideFrames(MatroskaStreamingFile.java:327) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack.lambda$process$0(MatroskaAudioTrack.java:40) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.executeProcessingLoop(LocalAudioTrackExecutor.java:261) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.executeProcessingLoop(LocalAudioTrackExecutor.java:234) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack.process(MatroskaAudioTrack.java:39) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.DelegatedAudioTrack.processDelegate(DelegatedAudioTrack.java:25) ~[lavaplayer-2.2.2.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.processStatic(YoutubeAudioTrack.java:158) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.processWithClient(YoutubeAudioTrack.java:126) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:72) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	... 5 common frames omitted
+Caused by: java.net.UnknownHostException: No such host is known (rr2---sn-uh-3jie.googlevideo.com)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45) ~[httpclient-4.5.14.jar!/:4.5.14]
+	at com.sedmelluq.discord.lavaplayer.tools.http.ExtendedConnectionOperator.resolveAddresses(ExtendedConnectionOperator.java:126) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.http.ExtendedConnectionOperator.connect(ExtendedConnectionOperator.java:57) ~[lavaplayer-2.2.2.jar!/:na]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[httpclient-4.5.14.jar!/:4.5.14]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[httpclient-4.5.14.jar!/:4.5.14]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.5.14.jar!/:4.5.14]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.14.jar!/:4.5.14]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.14.jar!/:4.5.14]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.14.jar!/:4.5.14]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.14.jar!/:4.5.14]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.14.jar!/:4.5.14]
+	at com.sedmelluq.discord.lavaplayer.tools.io.HttpInterface.execute(HttpInterface.java:73) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.attemptConnect(PersistentHttpStream.java:121) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.connect(PersistentHttpStream.java:106) ~[lavaplayer-2.2.2.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubePersistentHttpStream.internalRead(YoutubePersistentHttpStream.java:50) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubePersistentHttpStream.internalRead(YoutubePersistentHttpStream.java:76) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.read(PersistentHttpStream.java:194) ~[lavaplayer-2.2.2.jar!/:na]
+	at java.base/java.io.DataInputStream.readFully(DataInputStream.java:208) ~[na:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.format.MutableMatroskaBlock.getNextFrameBuffer(MutableMatroskaBlock.java:54) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaStreamingFile.processFrameInBlock(MatroskaStreamingFile.java:390) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaStreamingFile.parseClusterSimpleBlock(MatroskaStreamingFile.java:354) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaStreamingFile.parseNextCluster(MatroskaStreamingFile.java:339) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaStreamingFile.provideFrames(MatroskaStreamingFile.java:315) ~[lavaplayer-2.2.2.jar!/:na]
+	... 13 common frames omitted
+
+2024-10-17T14:50:15.335+08:00 ERROR 23472 --- [Lavalink] [nioEventLoopGroup-2-1] lavalink.server.io.SocketContext         : Koe encountered a voice gateway exception for guild 754373406887116810
+
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255) ~[netty-buffer-4.1.112.Final.jar!/:4.1.112.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.112.Final.jar!/:4.1.112.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:356) ~[netty-transport-4.1.112.Final.jar!/:4.1.112.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.112.Final.jar!/:4.1.112.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.112.Final.jar!/:4.1.112.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.112.Final.jar!/:4.1.112.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.112.Final.jar!/:4.1.112.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.112.Final.jar!/:4.1.112.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994) ~[netty-common-4.1.112.Final.jar!/:4.1.112.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.112.Final.jar!/:4.1.112.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.112.Final.jar!/:4.1.112.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-17T14:50:28.346+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": true}
+2024-10-17T14:50:49.961+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:soft spot keshi"
+2024-10-17T14:50:50.438+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: soft spot keshi
+2024-10-17T14:50:50.443+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:soft%20spot%20keshi, client=127.0.0.1
+2024-10-17T14:50:53.826+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6gMACVNvZnQgU3BvdAAFa2VzaGkAAAAAAAMgyAALdlowSW9nZGlwNDAAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj12WjBJb2dkaXA0MAEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hSXpYTkVscEkxUjlPeE1DdVYwbEgtcUlfN0FzTzJHT3I4U2NZS2llaXpWWTE4WnBtOUY5b1MzV2N6R19jdmNlX0NZV1V6Zlc0OWJxUDNzaD13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": true, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T14:51:01.331+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": false}
+2024-10-17T14:52:07.448+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": true}
+2024-10-17T14:52:12.802+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": false}
+2024-10-17T14:55:11.725+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:keshi war"
+2024-10-17T14:55:12.302+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: keshi war
+2024-10-17T14:55:12.308+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:keshi%20war, client=127.0.0.1
+2024-10-17T14:55:15.289+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA5AMAA1dhcgAFa2VzaGkAAAAAAAM0UAALRWRKd2RTOVY0RFkAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1FZEp3ZFM5VjREWQEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hSXpYTkVscEkxUjlPeE1DdVYwbEgtcUlfN0FzTzJHT3I4U2NZS2llaXpWWTE4WnBtOUY5b1MzV2N6R19jdmNlX0NZV1V6Zlc0OWJxUDNzaD13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T14:56:55.081+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": null}}
+2024-10-17T14:57:00.374+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/playlist?list=PLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq"
+2024-10-17T14:57:00.531+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Keshi - Requiem Album
+2024-10-17T14:57:00.549+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/playlist?list%3DPLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq, client=127.0.0.1
+2024-10-17T14:57:00.992+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtQMAImtlc2hpIC0gQW1lbiAoT2ZmaWNpYWwgVmlzdWFsaXplcikABWtlc2hpAAAAAAAA8jAACzhFS0M1MUtNdkkwAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9OEVLQzUxS012STABADBodHRwczovL2kueXRpbWcuY29tL3ZpLzhFS0M1MUtNdkkwL21xZGVmYXVsdC5qcGcAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T14:57:06.066+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": null}}
+2024-10-17T14:57:06.333+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtgMAI2tlc2hpIC0gTmlnaHQgKE9mZmljaWFsIFZpc3VhbGl6ZXIpAAVrZXNoaQAAAAAAArs4AAtqNUplcU5BbnBWRQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWo1SmVxTkFucFZFAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9qNUplcU5BbnBWRS9tcWRlZmF1bHQuanBnAAAHeW91dHViZQAAAAAAAAAA", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:00:05.487+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAugMAJ2tlc2hpIC0gTGlrZSBUaGF0IChPZmZpY2lhbCBWaXN1YWxpemVyKQAFa2VzaGkAAAAAAAK7OAALeklydHE3VmxKdGcAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj16SXJ0cTdWbEp0ZwEAMGh0dHBzOi8vaS55dGltZy5jb20vdmkveklydHE3VmxKdGcvbXFkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:02:07.173+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/lcadxjijc6ulx36h/players/754373406887116810, client=127.0.0.1
+2024-10-17T15:02:28.189+08:00  INFO 23472 --- [Lavalink] [XNIO-1 I/O-9] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:54903 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id lcadxjijc6ulx36h
+2024-10-17T15:02:40.484+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:58793
+2024-10-17T15:02:40.486+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T15:02:40.490+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T15:02:40.497+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5h8mzmlkv70em8au, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T15:02:40.501+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T15:02:59.721+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5h8mzmlkv70em8au/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "9b90ab149aa2fd2c9a33ba325f9b21ac", "token": "dd001f9518f19da3", "endpoint": "singapore11111.discord.media:443"}}
+2024-10-17T15:02:59.724+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/playlist?list=PLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq"
+2024-10-17T15:03:00.000+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Keshi - Requiem Album
+2024-10-17T15:03:00.002+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/playlist?list%3DPLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq, client=127.0.0.1
+2024-10-17T15:03:00.387+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5h8mzmlkv70em8au/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtQMAImtlc2hpIC0gQW1lbiAoT2ZmaWNpYWwgVmlzdWFsaXplcikABWtlc2hpAAAAAAAA8jAACzhFS0M1MUtNdkkwAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9OEVLQzUxS012STABADBodHRwczovL2kueXRpbWcuY29tL3ZpLzhFS0M1MUtNdkkwL21xZGVmYXVsdC5qcGcAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:03:05.589+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5h8mzmlkv70em8au/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": true}
+2024-10-17T15:03:08.458+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5h8mzmlkv70em8au/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": true}
+2024-10-17T15:03:28.189+08:00  INFO 23472 --- [Lavalink] [pool-2-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-10-17T15:04:03.374+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5h8mzmlkv70em8au/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": false}
+2024-10-17T15:04:07.366+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/5h8mzmlkv70em8au/players/754373406887116810, client=127.0.0.1
+2024-10-17T15:04:10.909+08:00  INFO 23472 --- [Lavalink] [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:58793 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id 5h8mzmlkv70em8au
+2024-10-17T15:04:49.244+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:61504
+2024-10-17T15:04:49.246+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T15:04:49.249+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T15:04:49.257+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/co19r683jp72yfe7, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T15:04:49.260+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T15:05:06.670+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/co19r683jp72yfe7/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "f383d6ec5a6b85715b9723d98e5fbf08", "token": "2fff7c2acdfdd265", "endpoint": "singapore11111.discord.media:443"}}
+2024-10-17T15:05:06.675+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/playlist?list=PLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq"
+2024-10-17T15:05:06.812+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Keshi - Requiem Album
+2024-10-17T15:05:06.815+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/playlist?list%3DPLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq, client=127.0.0.1
+2024-10-17T15:05:07.205+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/co19r683jp72yfe7/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtQMAImtlc2hpIC0gQW1lbiAoT2ZmaWNpYWwgVmlzdWFsaXplcikABWtlc2hpAAAAAAAA8jAACzhFS0M1MUtNdkkwAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9OEVLQzUxS012STABADBodHRwczovL2kueXRpbWcuY29tL3ZpLzhFS0M1MUtNdkkwL21xZGVmYXVsdC5qcGcAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:05:10.910+08:00  INFO 23472 --- [Lavalink] [pool-3-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-10-17T15:05:11.339+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/co19r683jp72yfe7/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": true}
+2024-10-17T15:05:14.225+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/co19r683jp72yfe7/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": false}
+2024-10-17T15:05:26.123+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/co19r683jp72yfe7/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": true}
+2024-10-17T15:05:28.886+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/co19r683jp72yfe7/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": false}
+2024-10-17T15:05:36.715+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/co19r683jp72yfe7/players/754373406887116810, client=127.0.0.1
+2024-10-17T15:07:48.790+08:00  INFO 23472 --- [Lavalink] [XNIO-1 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:61504 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id co19r683jp72yfe7
+2024-10-17T15:07:56.244+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:65418
+2024-10-17T15:07:56.246+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T15:07:56.250+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T15:07:56.257+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/6klemrt8hciqsfd2, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T15:07:56.261+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T15:08:39.561+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/6klemrt8hciqsfd2/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "6b546b1b49e6141d7b52e7d0a8d0a24b", "token": "42742ac95ba957dc", "endpoint": "singapore11111.discord.media:443"}}
+2024-10-17T15:08:39.565+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/playlist?list=PLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq"
+2024-10-17T15:08:39.668+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Keshi - Requiem Album
+2024-10-17T15:08:39.672+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/playlist?list%3DPLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq, client=127.0.0.1
+2024-10-17T15:08:40.062+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/6klemrt8hciqsfd2/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtQMAImtlc2hpIC0gQW1lbiAoT2ZmaWNpYWwgVmlzdWFsaXplcikABWtlc2hpAAAAAAAA8jAACzhFS0M1MUtNdkkwAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9OEVLQzUxS012STABADBodHRwczovL2kueXRpbWcuY29tL3ZpLzhFS0M1MUtNdkkwL21xZGVmYXVsdC5qcGcAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:08:44.816+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/6klemrt8hciqsfd2/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": false}
+2024-10-17T15:08:48.805+08:00  INFO 23472 --- [Lavalink] [pool-4-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-10-17T15:09:11.403+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/6klemrt8hciqsfd2/players/754373406887116810, client=127.0.0.1
+2024-10-17T15:09:57.284+08:00  INFO 23472 --- [Lavalink] [XNIO-1 I/O-6] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:65418 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id 6klemrt8hciqsfd2
+2024-10-17T15:10:03.813+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:52053
+2024-10-17T15:10:03.815+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T15:10:03.819+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T15:10:03.825+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c26ut7n1sg65w3e8, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T15:10:03.829+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T15:10:22.729+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c26ut7n1sg65w3e8/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "fc348c3b343b0faebbc5c7d3671501c6", "token": "36e5ef9956202390", "endpoint": "singapore11111.discord.media:443"}}
+2024-10-17T15:10:22.734+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/playlist?list=PLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq"
+2024-10-17T15:10:22.917+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Keshi - Requiem Album
+2024-10-17T15:10:22.921+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/playlist?list%3DPLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq, client=127.0.0.1
+2024-10-17T15:10:23.295+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c26ut7n1sg65w3e8/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtQMAImtlc2hpIC0gQW1lbiAoT2ZmaWNpYWwgVmlzdWFsaXplcikABWtlc2hpAAAAAAAA8jAACzhFS0M1MUtNdkkwAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9OEVLQzUxS012STABADBodHRwczovL2kueXRpbWcuY29tL3ZpLzhFS0M1MUtNdkkwL21xZGVmYXVsdC5qcGcAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:10:32.448+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c26ut7n1sg65w3e8/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": true}
+2024-10-17T15:10:39.863+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c26ut7n1sg65w3e8/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": false}
+2024-10-17T15:10:57.290+08:00  INFO 23472 --- [Lavalink] [pool-5-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-10-17T15:11:31.846+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c26ut7n1sg65w3e8/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtgMAI2tlc2hpIC0gTmlnaHQgKE9mZmljaWFsIFZpc3VhbGl6ZXIpAAVrZXNoaQAAAAAAArs4AAtqNUplcU5BbnBWRQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWo1SmVxTkFucFZFAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9qNUplcU5BbnBWRS9tcWRlZmF1bHQuanBnAAAHeW91dHViZQAAAAAAAAAA", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:12:27.705+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/c26ut7n1sg65w3e8/players/754373406887116810, client=127.0.0.1
+2024-10-17T15:12:35.057+08:00  INFO 23472 --- [Lavalink] [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52053 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id c26ut7n1sg65w3e8
+2024-10-17T15:13:35.062+08:00  INFO 23472 --- [Lavalink] [pool-6-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-10-17T15:20:01.079+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:64544
+2024-10-17T15:20:01.082+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T15:20:01.086+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T15:20:01.096+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/zs8g7adujewrj7du, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T15:20:01.103+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T15:20:44.967+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/zs8g7adujewrj7du/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "dabfff675d8ed4da2381e04ae0b55a90", "token": "028f0620c0c8be48", "endpoint": "singapore11111.discord.media:443"}}
+2024-10-17T15:20:44.974+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/playlist?list=PLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq"
+2024-10-17T15:20:45.351+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Keshi - Requiem Album
+2024-10-17T15:20:45.355+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/playlist?list%3DPLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq, client=127.0.0.1
+2024-10-17T15:20:45.816+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/zs8g7adujewrj7du/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtQMAImtlc2hpIC0gQW1lbiAoT2ZmaWNpYWwgVmlzdWFsaXplcikABWtlc2hpAAAAAAAA8jAACzhFS0M1MUtNdkkwAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9OEVLQzUxS012STABADBodHRwczovL2kueXRpbWcuY29tL3ZpLzhFS0M1MUtNdkkwL21xZGVmYXVsdC5qcGcAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:20:54.780+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/zs8g7adujewrj7du/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": true}
+2024-10-17T15:21:28.298+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/zs8g7adujewrj7du/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": false}
+2024-10-17T15:21:29.744+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/zs8g7adujewrj7du/players/754373406887116810, client=127.0.0.1
+2024-10-17T15:21:33.385+08:00  INFO 23472 --- [Lavalink] [XNIO-1 I/O-8] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:64544 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id zs8g7adujewrj7du
+2024-10-17T15:21:39.032+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:50562
+2024-10-17T15:21:39.034+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T15:21:39.036+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T15:21:39.042+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c54can604lcz725m, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T15:21:39.046+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T15:21:56.612+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c54can604lcz725m/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "037de9f26cdeda58e51223f899f378c3", "token": "690fe4d30b1a5c5b", "endpoint": "singapore11111.discord.media:443"}}
+2024-10-17T15:21:56.617+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/playlist?list=PLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq"
+2024-10-17T15:21:56.819+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Keshi - Requiem Album
+2024-10-17T15:21:56.823+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/playlist?list%3DPLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq, client=127.0.0.1
+2024-10-17T15:21:57.225+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c54can604lcz725m/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtQMAImtlc2hpIC0gQW1lbiAoT2ZmaWNpYWwgVmlzdWFsaXplcikABWtlc2hpAAAAAAAA8jAACzhFS0M1MUtNdkkwAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9OEVLQzUxS012STABADBodHRwczovL2kueXRpbWcuY29tL3ZpLzhFS0M1MUtNdkkwL21xZGVmYXVsdC5qcGcAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:22:02.476+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c54can604lcz725m/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": true}
+2024-10-17T15:22:08.547+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c54can604lcz725m/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"paused": false}
+2024-10-17T15:22:33.397+08:00  INFO 23472 --- [Lavalink] [pool-7-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-10-17T15:23:19.190+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=NC5LBDTYhkg"
+2024-10-17T15:23:19.471+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded track seasons (wave to earth) but it heals my soul
+2024-10-17T15:23:19.477+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/watch?v%3DNC5LBDTYhkg, client=127.0.0.1
+2024-10-17T15:23:22.222+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/c54can604lcz725m/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAABKgMALHNlYXNvbnMgKHdhdmUgdG8gZWFydGgpIGJ1dCBpdCBoZWFscyBteSBzb3VsAAVCaXJydQAAAAAABBL4AAtOQzVMQkRUWWhrZwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PU5DNUxCRFRZaGtnAQCbaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9OQzVMQkRUWWhrZy9tYXhyZXNkZWZhdWx0LmpwZz9zcXA9LW9heW13RW1DSUFLRU5BRjhxdUtxUU1hOEFFQi1BSC1DWUFDMEFXS0Fnd0lBQkFCR0hJZ1FTZzVNQTg9JnJzPUFPbjRDTEJZa09FdXRLWEM4dmhyeEhVanBFaXdPUGVialEAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:27:46.046+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/c54can604lcz725m/players/754373406887116810, client=127.0.0.1
+2024-10-17T15:27:49.288+08:00  INFO 23472 --- [Lavalink] [XNIO-1 I/O-11] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:50562 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id c54can604lcz725m
+2024-10-17T15:28:23.852+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:59059
+2024-10-17T15:28:23.857+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T15:28:23.861+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T15:28:23.868+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/3kfuzorxxfamrbdt, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T15:28:23.871+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T15:28:36.897+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/3kfuzorxxfamrbdt/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "d6ebd6ceeda549a9448c82a06f296b06", "token": "21b4191862f43494", "endpoint": "singapore11111.discord.media:443"}}
+2024-10-17T15:28:36.900+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:keshi soft spot"
+2024-10-17T15:28:37.461+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: keshi soft spot
+2024-10-17T15:28:37.463+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:keshi%20soft%20spot, client=127.0.0.1
+2024-10-17T15:28:44.253+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/3kfuzorxxfamrbdt/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6gMACVNvZnQgU3BvdAAFa2VzaGkAAAAAAAMgyAALdlowSW9nZGlwNDAAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj12WjBJb2dkaXA0MAEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hSXpYTkVscEkxUjlPeE1DdVYwbEgtcUlfN0FzTzJHT3I4U2NZS2llaXpWWTE4WnBtOUY5b1MzV2N6R19jdmNlX0NZV1V6Zlc0OWJxUDNzaD13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:28:49.293+08:00  INFO 23472 --- [Lavalink] [pool-8-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-10-17T15:29:02.419+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=-Qt7ZhScwwI"
+2024-10-17T15:29:02.713+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded track wave to earth(웨이브 투 어스) - daisy. - Fingerstyle Guitar Arrangement(핑거스타일)
+2024-10-17T15:29:02.717+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/watch?v%3D-Qt7ZhScwwI, client=127.0.0.1
+2024-10-17T15:30:08.022+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/3kfuzorxxfamrbdt/players/754373406887116810, client=127.0.0.1
+2024-10-17T15:30:17.847+08:00  INFO 23472 --- [Lavalink] [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:59059 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id 3kfuzorxxfamrbdt
+2024-10-17T15:30:29.701+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:61731
+2024-10-17T15:30:29.702+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T15:30:29.704+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T15:30:29.710+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/pno4zk910wo15vc4, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T15:30:29.714+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T15:31:17.854+08:00  INFO 23472 --- [Lavalink] [pool-9-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-10-17T15:36:37.147+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/pno4zk910wo15vc4/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "c22e7ad9b531913050c1d184bafee52a", "token": "d8753626514223f1", "endpoint": "singapore11111.discord.media:443"}}
+2024-10-17T15:36:37.150+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=-Qt7ZhScwwI"
+2024-10-17T15:36:37.557+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded track wave to earth(웨이브 투 어스) - daisy. - Fingerstyle Guitar Arrangement(핑거스타일)
+2024-10-17T15:36:37.560+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/watch?v%3D-Qt7ZhScwwI, client=127.0.0.1
+2024-10-17T15:44:33.393+08:00  INFO 23472 --- [Lavalink] [XNIO-1 I/O-10] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:61731 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id pno4zk910wo15vc4
+2024-10-17T15:44:53.524+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:63812
+2024-10-17T15:44:53.528+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T15:44:53.532+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T15:44:53.546+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/vye8osxnkh0v5ini, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T15:44:53.553+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T15:45:08.593+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/vye8osxnkh0v5ini/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "e4e3017a9c74d7d3bc3b171475728b53", "token": "5a658c24edb59bac", "endpoint": "singapore11111.discord.media:443"}}
+2024-10-17T15:45:08.596+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=-Qt7ZhScwwI"
+2024-10-17T15:45:09.048+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded track wave to earth(웨이브 투 어스) - daisy. - Fingerstyle Guitar Arrangement(핑거스타일)
+2024-10-17T15:45:09.051+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/watch?v%3D-Qt7ZhScwwI, client=127.0.0.1
+2024-10-17T15:45:09.453+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/vye8osxnkh0v5ini/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA+QMAXndhdmUgdG8gZWFydGgo7Juo7J2067iMIO2IrCDslrTsiqQpIC0gZGFpc3kuIC0gRmluZ2Vyc3R5bGUgR3VpdGFyIEFycmFuZ2VtZW50KO2VkeqxsOyKpO2DgOydvCkADeu5iChLd29uIEJpbikAAAAAAANACAALLVF0N1poU2N3d0kAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj0tUXQ3WmhTY3d3SQEAMGh0dHBzOi8vaS55dGltZy5jb20vdmkvLVF0N1poU2N3d0kvbXFkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:45:33.407+08:00  INFO 23472 --- [Lavalink] [pool-10-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-10-17T15:49:11.359+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:soft spot keshi"
+2024-10-17T15:49:11.938+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: soft spot keshi
+2024-10-17T15:49:11.941+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:soft%20spot%20keshi, client=127.0.0.1
+2024-10-17T15:49:13.931+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/vye8osxnkh0v5ini/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6gMACVNvZnQgU3BvdAAFa2VzaGkAAAAAAAMgyAALdlowSW9nZGlwNDAAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj12WjBJb2dkaXA0MAEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hSXpYTkVscEkxUjlPeE1DdVYwbEgtcUlfN0FzTzJHT3I4U2NZS2llaXpWWTE4WnBtOUY5b1MzV2N6R19jdmNlX0NZV1V6Zlc0OWJxUDNzaD13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:49:35.863+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=SPyBqm5Ie0c"
+2024-10-17T15:49:36.144+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded track You're the main character playlist ✨ [sped up]
+2024-10-17T15:49:36.146+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/watch?v%3DSPyBqm5Ie0c, client=127.0.0.1
+2024-10-17T15:49:42.321+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/vye8osxnkh0v5ini/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": null}}
+2024-10-17T15:49:42.327+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/vye8osxnkh0v5ini/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAzwMAMFlvdSdyZSB0aGUgbWFpbiBjaGFyYWN0ZXIgcGxheWxpc3Qg4pyoIFtzcGVkIHVwXQANS2lyaV9wbGF5bGlzdAAAAAAAIJfAAAtTUHlCcW01SWUwYwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVNQeUJxbTVJZTBjAQA0aHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9TUHlCcW01SWUwYy9tYXhyZXNkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T15:49:57.614+08:00  INFO 23472 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/vye8osxnkh0v5ini/players/754373406887116810, client=127.0.0.1
+2024-10-17T15:50:12.987+08:00  INFO 23472 --- [Lavalink] [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:63812 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id vye8osxnkh0v5ini

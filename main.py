@@ -49,7 +49,7 @@ class Bot(commands.Bot):
         embed.description = f"**[{track.title}]({track.uri})**  - *{ms_convert(track.length)}* by `{track.author}`"
 
         if track.artwork:
-            embed.set_image(url=track.artwork)
+            embed.set_thumbnail(url=track.artwork)
 
         if original and original.recommended:
             embed.description += f"\n\n`This track was recommended via {track.source}`"
@@ -108,6 +108,10 @@ async def play(ctx: commands.Context, *, query: str) -> None:
         # tracks is a playlist...
         added: int = await player.queue.put_wait(tracks)
         await ctx.send(f"Added the playlist **`{tracks.name}`** ({added} songs) to the queue.")
+    elif "https://www.youtube.com/watch?" in query:
+        track: wavelink.Playable = tracks[0]
+        await player.queue.put_wait(track)
+        await ctx.send(f"Added **`{track}`** to the queue.")
     else:
         message = "Top 5 Results:\n"
         results = tracks[:5] # gets the top 5 results from tracks list
@@ -238,17 +242,36 @@ async def skip(ctx: commands.Context) -> None:
     await ctx.message.add_reaction("\u2705")
 
 
-# Pause and Resume Player command
-@bot.command(name="toggle", aliases=["pause", "resume"])
-async def pause_resume(ctx: commands.Context) -> None:
-    """Pause or Resume the Player depending on its current state."""
+# Pause Player command
+@bot.command()
+async def pause(ctx: commands.Context) -> None:
+    """Pause the Player depending on its current state."""
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
 
     if not player:
         return
     
-    await player.pause(not player.paused)
-    await ctx.message.add_reaction("\u2705")
+    if player.paused == False:
+        await player.pause(True)
+        await ctx.message.add_reaction("\u2705")
+    else:
+        await ctx.send("Player is already paused.")
+
+        
+# Resume Player command
+@bot.command()
+async def resume(ctx: commands.Context) -> None:
+    """Resume the Player depending on its current state."""
+    player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+
+    if not player:
+        return
+    
+    if player.paused == True:
+        await player.pause(False)
+        await ctx.message.add_reaction("\u2705")
+    else:
+        await ctx.send("Player is not currently paused.")
 
 
 # Player volume control command
