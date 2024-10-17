@@ -142,7 +142,7 @@ async def play(ctx: commands.Context, *, query: str) -> None:
 
     if not player.playing:
         # Play now since we aren't playing anything...
-        await player.play(player.queue.get(), volume=10)
+        await player.play(player.queue.get(), volume=50)
 
 
 # View the Player Queue command

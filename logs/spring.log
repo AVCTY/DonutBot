@@ -1,0 +1,566 @@
+2024-10-17T10:34:48.705+08:00  INFO 19676 --- [main] lavalink.server.Launcher                 : Starting Launcher vfe62703cc94ee43c9426c564e8564d5086b8b1ee-SNAPSHOT using Java 21.0.4 with PID 19676 (C:\Users\arthu\Desktop\devArthur\DonutBot\Lavalink.jar started by arthu in C:\Users\arthu\Desktop\devArthur\DonutBot)
+2024-10-17T10:34:48.716+08:00  INFO 19676 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T10:34:49.844+08:00  INFO 19676 --- [main] lavalink.server.Launcher                 : Started Launcher in 1.731 seconds (process running for 2.334)
+2024-10-17T10:34:49.914+08:00  INFO 19676 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        fe62703cc94ee43c9426c564e8564d5086b8b1ee-SNAPSHOT
+	Build time:     30.03.2024 19:26:44 UTC
+	Branch          v4-update-lp
+	Commit:         fe62703
+	Commit time:    30.03.2024 19:24:36 UTC
+	JVM:            21.0.4
+	Lavaplayer      afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT
+
+2024-10-17T10:34:49.925+08:00  INFO 19676 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T10:34:50.686+08:00  WARN 19676 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-10-17T10:34:50.710+08:00  INFO 19676 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-10-17T10:34:50.711+08:00  INFO 19676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 778 ms
+2024-10-17T10:34:50.835+08:00  WARN 19676 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-10-17T10:34:50.950+08:00  INFO 19676 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-10-17T10:34:51.921+08:00  INFO 19676 --- [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2024-10-17T10:34:51.922+08:00  INFO 19676 --- [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2024-10-17T10:34:51.926+08:00  INFO 19676 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-10-17T10:34:51.934+08:00  INFO 19676 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-10-17T10:34:52.230+08:00  INFO 19676 --- [main] io.undertow                              : starting server: Undertow - 2.3.6.Final
+2024-10-17T10:34:52.239+08:00  INFO 19676 --- [main] org.xnio                                 : XNIO version 3.8.8.Final
+2024-10-17T10:34:52.259+08:00  INFO 19676 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2024-10-17T10:34:52.389+08:00  INFO 19676 --- [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2024-10-17T10:34:52.470+08:00  INFO 19676 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 2333 (http)
+2024-10-17T10:34:52.478+08:00  INFO 19676 --- [main] lavalink.server.Launcher                 : Started Launcher in 2.628 seconds (process running for 4.968)
+2024-10-17T10:34:52.481+08:00  INFO 19676 --- [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-10-17T10:43:05.179+08:00  INFO 19676 --- [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T10:43:05.180+08:00  INFO 19676 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T10:43:05.182+08:00  INFO 19676 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-17T10:43:05.213+08:00  INFO 19676 --- [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:62818
+2024-10-17T10:43:05.234+08:00  INFO 19676 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T10:43:05.309+08:00  INFO 19676 --- [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T10:43:05.569+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/x6261o2rs9kha2wh, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T10:43:05.591+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T10:44:09.798+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/x6261o2rs9kha2wh/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "4816271f0489e3bbbfff9e62347db417", "token": "678255bf6673f905", "endpoint": "singapore11023.discord.media:443"}}
+2024-10-17T10:44:09.831+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:wave to earth bad"
+2024-10-17T10:44:10.513+08:00  INFO 19676 --- [XNIO-1 task-3] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: wave to earth bad
+2024-10-17T10:44:10.535+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:wave%20to%20earth%20bad, client=127.0.0.1
+2024-10-17T10:44:14.865+08:00  WARN 19676 --- [lava-daemon-pool-playback-1-thread-1] c.s.d.l.s.y.YoutubeAccessTokenTracker    : YouTube auth tokens can't be retrieved because email and password is not set in YoutubeAudioSourceManager, age restricted videos will throw exceptions.
+2024-10-17T10:44:14.865+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/x6261o2rs9kha2wh/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6wMAA2JhZAANd2F2ZSB0byBlYXJ0aAAAAAAABAdAAAtFQXlZM194V1pZWQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PUVBeVkzX3hXWllZAQB9aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tLzJtdXJ5Mk04QzBPNzhVVG9LcUxibnZ6bm9DckltLUJ6ZURWM2xXZHRhcnRDanFYWXlQdS0wWTFLQldVTE1RZmtISTFRQmlTUkhTdTNONzQ9dzEwMDAtaDEwMDAAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T10:44:15.541+08:00 ERROR 19676 --- [lava-daemon-pool-playback-1-thread-1] .s.d.l.s.y.YoutubeSignatureCipherManager : Problematic YouTube player script /s/player/b7240855/player_ias.vflset/ms_MY/base.js detected (issue detected with script: no n function match). Dumped to C:\Users\arthu\AppData\Local\Temp\lavaplayer-yt-player-script4408744667836106245.js
+2024-10-17T10:44:16.388+08:00 ERROR 19676 --- [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of EAyY3_xWZYY
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:45) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:113) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:330) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.RuntimeException: Not success status code: 403
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.validateStatusCode(PersistentHttpStream.java:88) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.attemptConnect(PersistentHttpStream.java:124) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.connect(PersistentHttpStream.java:106) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.internalRead(PersistentHttpStream.java:158) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.read(PersistentHttpStream.java:174) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:295) ~[na:na]
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:275) ~[na:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.format.MatroskaEbmlReader.readEbmlInteger(MatroskaEbmlReader.java:39) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.format.MatroskaFileReader.readNextElement(MatroskaFileReader.java:46) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaStreamingFile.readFile(MatroskaStreamingFile.java:74) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack.loadMatroskaFile(MatroskaAudioTrack.java:52) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack.process(MatroskaAudioTrack.java:35) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.DelegatedAudioTrack.processDelegate(DelegatedAudioTrack.java:25) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.processStatic(YoutubeAudioTrack.java:90) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.processStaticWithRetry(YoutubeAudioTrack.java:72) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:53) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:101) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	... 4 common frames omitted
+
+2024-10-17T10:45:14.108+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=_fFlr8--Fb8"
+2024-10-17T10:45:14.286+08:00  INFO 19676 --- [XNIO-1 task-3] lavalink.server.player.AudioLoader       : Loaded track wave to earth(웨이브 투 어스) - bad - 핑거스타일 (Fingerstyle Guitar) Arranged By Bin
+2024-10-17T10:45:14.299+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/watch?v%3D_fFlr8--Fb8, client=127.0.0.1
+2024-10-17T10:45:19.075+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/x6261o2rs9kha2wh/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA/wMAYHdhdmUgdG8gZWFydGgo7Juo7J2067iMIO2IrCDslrTsiqQpIC0gYmFkIC0g7ZWR6rGw7Iqk7YOA7J28IChGaW5nZXJzdHlsZSBHdWl0YXIpIEFycmFuZ2VkIEJ5IEJpbgAN67mIKEt3b24gQmluKQAAAAAAA/egAAtfZkZscjgtLUZiOAABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PV9mRmxyOC0tRmI4AQA0aHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9fZkZscjgtLUZiOC9tYXhyZXNkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T10:45:19.608+08:00 ERROR 19676 --- [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of _fFlr8--Fb8
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:45) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:113) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:330) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.RuntimeException: Not success status code: 403
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.validateStatusCode(PersistentHttpStream.java:88) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.attemptConnect(PersistentHttpStream.java:124) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.connect(PersistentHttpStream.java:106) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.internalRead(PersistentHttpStream.java:158) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.read(PersistentHttpStream.java:174) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:295) ~[na:na]
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:275) ~[na:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.format.MatroskaEbmlReader.readEbmlInteger(MatroskaEbmlReader.java:39) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.format.MatroskaFileReader.readNextElement(MatroskaFileReader.java:46) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaStreamingFile.readFile(MatroskaStreamingFile.java:74) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack.loadMatroskaFile(MatroskaAudioTrack.java:52) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack.process(MatroskaAudioTrack.java:35) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.DelegatedAudioTrack.processDelegate(DelegatedAudioTrack.java:25) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.processStatic(YoutubeAudioTrack.java:90) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.processStaticWithRetry(YoutubeAudioTrack.java:72) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:53) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:101) ~[lavaplayer-afec211f05c9dcf0b6ee44276a02f0316ea2458a-SNAPSHOT.jar!/:na]
+	... 4 common frames omitted
+
+2024-10-17T10:48:34.700+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:glimpse of us"
+2024-10-17T10:48:35.253+08:00  INFO 19676 --- [XNIO-1 task-3] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: glimpse of us
+2024-10-17T10:48:35.257+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:glimpse%20of%20us, client=127.0.0.1
+2024-10-17T10:48:38.928+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/x6261o2rs9kha2wh/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA7QMADUdsaW1wc2Ugb2YgVXMABEpvamkAAAAAAAOSEAALRXVpUFJMejhnMlkAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1FdWlQUkx6OGcyWQEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS80UHAyQmo2VWVJZW04OUJwemNrZU9PMnZkejh1ZnhDSjVleXY3M0toazJFemRwN0hiTV9COElKX3FtQmpRb2FNbzB0Vm14LWpNMEdmaTNwOT13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T10:49:56.966+08:00  INFO 19676 --- [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/x6261o2rs9kha2wh/players/754373406887116810, client=127.0.0.1
+2024-10-17T10:50:02.904+08:00  INFO 19676 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:62818 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id x6261o2rs9kha2wh
+2024-10-17T10:50:45.848+08:00  INFO 22520 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.0.8 using Java 21.0.4 with PID 22520 (C:\Users\arthu\Desktop\devArthur\DonutBot\Lavalink.jar started by arthu in C:\Users\arthu\Desktop\devArthur\DonutBot)
+2024-10-17T10:50:45.856+08:00  INFO 22520 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T10:50:47.186+08:00  INFO 22520 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 1.934 seconds (process running for 2.553)
+2024-10-17T10:50:47.264+08:00  INFO 22520 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.8
+	Build time:     20.09.2024 20:20:10 UTC
+	Branch          HEAD
+	Commit:         2946608
+	Commit time:    20.09.2024 20:17:58 UTC
+	JVM:            21.0.4
+	Lavaplayer      2.2.2
+
+2024-10-17T10:50:47.276+08:00  INFO 22520 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T10:50:48.043+08:00  WARN 22520 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-10-17T10:50:48.082+08:00  INFO 22520 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-10-17T10:50:48.083+08:00  INFO 22520 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 800 ms
+2024-10-17T10:50:48.234+08:00  INFO 22520 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-10-17T10:50:48.400+08:00  WARN 22520 --- [Lavalink] [main] l.s.config.AudioPlayerConfiguration      : The default Youtube source is now deprecated and won't receive further updates.
+You should use the new Youtube source plugin instead.
+https://github.com/lavalink-devs/youtube-source#plugin.
+To disable this warning, set 'lavalink.server.sources.youtube' to false in your application.yml.
+2024-10-17T10:50:49.130+08:00  INFO 22520 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2024-10-17T10:50:49.130+08:00  INFO 22520 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2024-10-17T10:50:49.134+08:00  INFO 22520 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-10-17T10:50:49.140+08:00  INFO 22520 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-10-17T10:50:49.183+08:00  WARN 22520 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-10-17T10:50:49.571+08:00  INFO 22520 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2024-10-17T10:50:49.588+08:00  INFO 22520 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2024-10-17T10:50:49.602+08:00  INFO 22520 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2024-10-17T10:50:49.713+08:00  INFO 22520 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2024-10-17T10:50:49.799+08:00  INFO 22520 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 2333 (http) with context path '/'
+2024-10-17T10:50:49.806+08:00  INFO 22520 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 2.61 seconds (process running for 5.172)
+2024-10-17T10:50:49.807+08:00  INFO 22520 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-10-17T10:54:15.077+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T10:54:15.078+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T10:54:15.080+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-17T10:54:15.114+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:60839
+2024-10-17T10:54:15.138+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T10:54:15.209+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T10:54:15.463+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/kkij0wnokwt853ka, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T10:54:15.481+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T10:54:35.512+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/kkij0wnokwt853ka/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "a302208ae5a16824f71a2846f1152a73", "token": "8437d57d02cc0e47", "endpoint": "singapore11023.discord.media:443"}}
+2024-10-17T10:54:35.524+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:glimpse of us"
+2024-10-17T10:54:36.306+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: glimpse of us
+2024-10-17T10:54:36.327+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:glimpse%20of%20us, client=127.0.0.1
+2024-10-17T10:54:38.829+08:00  INFO 22520 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/kkij0wnokwt853ka/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA7QMADUdsaW1wc2Ugb2YgVXMABEpvamkAAAAAAAOSEAALRXVpUFJMejhnMlkAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1FdWlQUkx6OGcyWQEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS80UHAyQmo2VWVJZW04OUJwemNrZU9PMnZkejh1ZnhDSjVleXY3M0toazJFemRwN0hiTV9COElKX3FtQmpRb2FNbzB0Vm14LWpNMEdmaTNwOT13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T10:54:38.829+08:00  WARN 22520 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.s.y.YoutubeAccessTokenTracker    : YouTube auth tokens can't be retrieved because email and password is not set in YoutubeAudioSourceManager, age restricted videos will throw exceptions.
+2024-10-17T10:54:39.292+08:00 ERROR 22520 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] .s.d.l.s.y.YoutubeSignatureCipherManager : Problematic YouTube player script /s/player/b7240855/player_ias.vflset/ms_MY/base.js detected (issue detected with script: no n function match). Dumped to C:\Users\arthu\AppData\Local\Temp\lavaplayer-yt-player-script1008014380592722184.js
+2024-10-17T10:54:39.320+08:00  INFO 22520 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.s.y.YoutubeAccessTokenTracker    : Updating YouTube visitor id (current is null).
+2024-10-17T10:54:39.497+08:00  INFO 22520 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.s.y.YoutubeAccessTokenTracker    : Updating YouTube visitor id succeeded, new one is CgtaZlJfWkNwaWVuQSjv-MG4BjIKCgJNWRIEGgAgbToMCAEg6P7Cq_GNn4hn, next update will be after 600 seconds.
+2024-10-17T11:14:51.963+08:00  INFO 20856 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.0.8 using Java 21.0.4 with PID 20856 (C:\Users\arthu\Desktop\devArthur\DonutBot\Lavalink.jar started by arthu in C:\Users\arthu\Desktop\devArthur\DonutBot)
+2024-10-17T11:14:51.971+08:00  INFO 20856 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T11:14:53.147+08:00  INFO 20856 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/dev/lavalink/youtube/youtube-plugin/1.8.3/youtube-plugin-1.8.3.jar
+2024-10-17T11:15:09.823+08:00  INFO 20856 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded youtube-plugin-1.8.3.jar (16 classes)
+2024-10-17T11:15:10.046+08:00  INFO 20856 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 18.675 seconds (process running for 19.251)
+2024-10-17T11:15:10.126+08:00  INFO 20856 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.8
+	Build time:     20.09.2024 20:20:10 UTC
+	Branch          HEAD
+	Commit:         2946608
+	Commit time:    20.09.2024 20:17:58 UTC
+	JVM:            21.0.4
+	Lavaplayer      2.2.2
+
+2024-10-17T11:15:10.139+08:00  INFO 20856 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T11:15:10.869+08:00  WARN 20856 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-10-17T11:15:10.902+08:00  INFO 20856 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-10-17T11:15:10.903+08:00  INFO 20856 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+2024-10-17T11:15:11.722+08:00  INFO 20856 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-10-17T11:15:12.100+08:00  INFO 20856 --- [Lavalink] [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_TESTSUITE, WEB, TVHTML5_SIMPLY_EMBEDDED_PLAYER 
+2024-10-17T11:15:12.275+08:00  INFO 20856 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2024-10-17T11:15:12.277+08:00  INFO 20856 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2024-10-17T11:15:12.280+08:00  INFO 20856 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-10-17T11:15:12.287+08:00  INFO 20856 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-10-17T11:15:12.327+08:00  WARN 20856 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-10-17T11:15:12.662+08:00  INFO 20856 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2024-10-17T11:15:12.672+08:00  INFO 20856 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2024-10-17T11:15:12.682+08:00  INFO 20856 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2024-10-17T11:15:12.788+08:00  INFO 20856 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2024-10-17T11:15:12.867+08:00  INFO 20856 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 2333 (http) with context path '/'
+2024-10-17T11:15:12.872+08:00  INFO 20856 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 2.815 seconds (process running for 22.077)
+2024-10-17T11:15:12.876+08:00  INFO 20856 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-10-17T11:20:40.782+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T11:20:40.782+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T11:20:40.785+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-10-17T11:20:40.812+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:61953
+2024-10-17T11:20:40.832+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T11:20:40.901+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T11:20:41.150+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/h339zxvsjpy2dnge, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T11:20:41.176+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T11:22:25.478+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/h339zxvsjpy2dnge/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "2b44e975d20770047dbe85baf92dff8d", "token": "e87f3ad408557e08", "endpoint": "singapore11023.discord.media:443"}}
+2024-10-17T11:22:25.490+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:glimpse of us"
+2024-10-17T11:22:26.312+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: glimpse of us
+2024-10-17T11:22:26.334+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:glimpse%20of%20us, client=127.0.0.1
+2024-10-17T11:22:29.051+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/h339zxvsjpy2dnge/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA7QMADUdsaW1wc2Ugb2YgVXMABEpvamkAAAAAAAOSEAALRXVpUFJMejhnMlkAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1FdWlQUkx6OGcyWQEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS80UHAyQmo2VWVJZW04OUJwemNrZU9PMnZkejh1ZnhDSjVleXY3M0toazJFemRwN0hiTV9COElKX3FtQmpRb2FNbzB0Vm14LWpNMEdmaTNwOT13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T11:22:29.938+08:00  INFO 20856 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] d.l.y.http.YoutubeAccessTokenTracker     : Updating YouTube visitor id succeeded, new one is Cgt5Qkd4SmdWQmtqQSj1hcK4BjIKCgJNWRIEGgAgOToMCAEggYfy_9DeoIhn, next update will be after 600 seconds.
+2024-10-17T11:22:30.897+08:00  WARN 20856 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Suspicious exception for playback of EuiPRLz8g2Y
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Please sign in
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:102) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.2.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-17T11:28:14.365+08:00  INFO 20856 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/h339zxvsjpy2dnge/players/754373406887116810, client=127.0.0.1
+2024-10-17T11:32:16.305+08:00  INFO 18920 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.0.8 using Java 21.0.4 with PID 18920 (C:\Users\arthu\Desktop\devArthur\DonutBot\Lavalink.jar started by arthu in C:\Users\arthu\Desktop\devArthur\DonutBot)
+2024-10-17T11:32:16.315+08:00  INFO 18920 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T11:32:17.461+08:00  INFO 18920 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version 1.8.3
+2024-10-17T11:32:17.487+08:00  INFO 18920 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded youtube-plugin-1.8.3.jar (16 classes)
+2024-10-17T11:32:17.739+08:00  INFO 18920 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 2.027 seconds (process running for 2.595)
+2024-10-17T11:32:17.811+08:00  INFO 18920 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.8
+	Build time:     20.09.2024 20:20:10 UTC
+	Branch          HEAD
+	Commit:         2946608
+	Commit time:    20.09.2024 20:17:58 UTC
+	JVM:            21.0.4
+	Lavaplayer      2.2.2
+
+2024-10-17T11:32:17.825+08:00  INFO 18920 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T11:32:18.600+08:00  WARN 18920 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-10-17T11:32:18.622+08:00  INFO 18920 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-10-17T11:32:18.623+08:00  INFO 18920 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 792 ms
+2024-10-17T11:32:19.857+08:00  INFO 18920 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-10-17T11:32:20.311+08:00  INFO 18920 --- [Lavalink] [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_TESTSUITE, WEB, TVHTML5_SIMPLY_EMBEDDED_PLAYER 
+2024-10-17T11:32:20.721+08:00  INFO 18920 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : ==================================================
+2024-10-17T11:32:20.722+08:00  INFO 18920 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : !!! DO NOT AUTHORISE WITH YOUR MAIN ACCOUNT, USE A BURNER !!!
+2024-10-17T11:32:20.724+08:00  INFO 18920 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : OAUTH INTEGRATION: To give youtube-source access to your account, go to https://www.google.com/device and enter code LNC-KCL-MVM
+2024-10-17T11:32:20.725+08:00  INFO 18920 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : !!! DO NOT AUTHORISE WITH YOUR MAIN ACCOUNT, USE A BURNER !!!
+2024-10-17T11:32:20.726+08:00  INFO 18920 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : ==================================================
+2024-10-17T11:32:20.913+08:00  INFO 18920 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2024-10-17T11:32:20.914+08:00  INFO 18920 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2024-10-17T11:32:20.917+08:00  INFO 18920 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-10-17T11:32:20.926+08:00  INFO 18920 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-10-17T11:32:20.971+08:00  WARN 18920 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-10-17T11:32:21.355+08:00  INFO 18920 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2024-10-17T11:32:21.367+08:00  INFO 18920 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2024-10-17T11:32:21.378+08:00  INFO 18920 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2024-10-17T11:32:21.483+08:00  INFO 18920 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2024-10-17T11:32:21.569+08:00  INFO 18920 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 2333 (http) with context path '/'
+2024-10-17T11:32:21.576+08:00  INFO 18920 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 3.83 seconds (process running for 6.432)
+2024-10-17T11:32:21.577+08:00  INFO 18920 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-10-17T11:32:32.155+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T11:32:32.156+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T11:32:32.157+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-17T11:32:32.185+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:60862
+2024-10-17T11:32:32.202+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T11:32:32.266+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T11:32:32.522+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5zuh6e5o8bu5jnva, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T11:32:32.543+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T11:32:58.355+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5zuh6e5o8bu5jnva/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "b49e1fc9ddb423505ff37d0518c084b5", "token": "8c1e3c5e4f514bff", "endpoint": "singapore11023.discord.media:443"}}
+2024-10-17T11:32:58.368+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:ditto newjeans"
+2024-10-17T11:32:58.956+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: ditto newjeans
+2024-10-17T11:32:58.982+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:ditto%20newjeans, client=127.0.0.1
+2024-10-17T11:33:02.000+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5zuh6e5o8bu5jnva/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6QMABURpdHRvAAhOZXdKZWFucwAAAAAAAtaQAAtWNlRFY29OVW1jOAABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PVY2VEVjb05VbWM4AQB+aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL1VXTS14Nzd4aGNFRUFLOHRLSUN0bERTeHNZZWRvRnhRaGRpRFB6Vy1XdzU5RFdzN3JEUXBEX2lkSlE2aDVZRUpydVVSZ3BFcjFPLTBvcTVZPXcxMDAwLWgxMDAwAAAHeW91dHViZQAAAAAAAAAA", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T11:33:02.564+08:00  INFO 18920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] d.l.y.http.YoutubeAccessTokenTracker     : Updating YouTube visitor id succeeded, new one is CgsxLWNlSS1hdlF1MCjuisK4BjIKCgJNWRIEGgAgYToMCAEgjLiu6eetoYhn, next update will be after 600 seconds.
+2024-10-17T11:33:03.579+08:00  INFO 18920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda/0x00000176d486b150@8c8152e
+2024-10-17T11:33:03.589+08:00  INFO 18920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library libmpg123-0: successfully loaded.
+2024-10-17T11:33:03.589+08:00  INFO 18920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library connector: loading with filter null
+2024-10-17T11:33:03.615+08:00  INFO 18920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library connector: successfully loaded.
+2024-10-17T11:33:27.072+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:wave to earth bad"
+2024-10-17T11:33:27.509+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: wave to earth bad
+2024-10-17T11:33:27.529+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:wave%20to%20earth%20bad, client=127.0.0.1
+2024-10-17T11:33:35.662+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5zuh6e5o8bu5jnva/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": null}}
+2024-10-17T11:33:35.670+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5zuh6e5o8bu5jnva/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6wMAA2JhZAANd2F2ZSB0byBlYXJ0aAAAAAAABAdAAAtFQXlZM194V1pZWQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PUVBeVkzX3hXWllZAQB9aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tLzJtdXJ5Mk04QzBPNzhVVG9LcUxibnZ6bm9DckltLUJ6ZURWM2xXZHRhcnRDanFYWXlQdS0wWTFLQldVTE1RZmtISTFRQmlTUkhTdTNONzQ9dzEwMDAtaDEwMDAAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T11:33:36.075+08:00  WARN 18920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Suspicious exception for playback of EAyY3_xWZYY
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Please sign in
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:102) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.2.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-17T11:34:06.978+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:keshi soft spot"
+2024-10-17T11:34:07.388+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: keshi soft spot
+2024-10-17T11:34:07.391+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:keshi%20soft%20spot, client=127.0.0.1
+2024-10-17T11:34:09.909+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5zuh6e5o8bu5jnva/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6gMACVNvZnQgU3BvdAAFa2VzaGkAAAAAAAMgyAALdlowSW9nZGlwNDAAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj12WjBJb2dkaXA0MAEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hSXpYTkVscEkxUjlPeE1DdVYwbEgtcUlfN0FzTzJHT3I4U2NZS2llaXpWWTE4WnBtOUY5b1MzV2N6R19jdmNlX0NZV1V6Zlc0OWJxUDNzaD13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T11:34:10.322+08:00  WARN 18920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Suspicious exception for playback of vZ0Iogdip40
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Please sign in
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:102) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.2.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-17T11:34:43.992+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:how sweet newjeans"
+2024-10-17T11:34:44.436+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: how sweet newjeans
+2024-10-17T11:34:44.442+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:how%20sweet%20newjeans, client=127.0.0.1
+2024-10-17T11:34:47.023+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/5zuh6e5o8bu5jnva/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA7QMACUhvdyBTd2VldAAITmV3SmVhbnMAAAAAAANbYAALdnJNMm1ySTgzdWsAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj12ck0ybXJJODN1awEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9Tay1xazB1OW1aMVFXQkRhek1KZHpMV1ZpYzFUU2E3VFdaWUM4Xy1GVXRrVUR5eTBWZzYxekhabEpzODhlall5M282MEdSYm1TRFRPVW04dz13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T11:37:20.638+08:00  INFO 18920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/5zuh6e5o8bu5jnva/players/754373406887116810, client=127.0.0.1
+2024-10-17T11:37:27.392+08:00  INFO 18920 --- [Lavalink] [XNIO-1 I/O-11] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:60862 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id 5zuh6e5o8bu5jnva
+2024-10-17T11:37:37.642+08:00  INFO 22388 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.0.8 using Java 21.0.4 with PID 22388 (C:\Users\arthu\Desktop\devArthur\DonutBot\Lavalink.jar started by arthu in C:\Users\arthu\Desktop\devArthur\DonutBot)
+2024-10-17T11:37:37.649+08:00  INFO 22388 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T11:37:38.774+08:00  INFO 22388 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version 1.8.3
+2024-10-17T11:37:38.799+08:00  INFO 22388 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded youtube-plugin-1.8.3.jar (16 classes)
+2024-10-17T11:37:39.049+08:00  INFO 22388 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 1.988 seconds (process running for 2.539)
+2024-10-17T11:37:39.125+08:00  INFO 22388 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.8
+	Build time:     20.09.2024 20:20:10 UTC
+	Branch          HEAD
+	Commit:         2946608
+	Commit time:    20.09.2024 20:17:58 UTC
+	JVM:            21.0.4
+	Lavaplayer      2.2.2
+
+2024-10-17T11:37:39.137+08:00  INFO 22388 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T11:37:39.906+08:00  WARN 22388 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-10-17T11:37:39.928+08:00  INFO 22388 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-10-17T11:37:39.929+08:00  INFO 22388 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 786 ms
+2024-10-17T11:37:41.095+08:00  INFO 22388 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-10-17T11:37:41.517+08:00  INFO 22388 --- [Lavalink] [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_TESTSUITE, WEB, TVHTML5_SIMPLY_EMBEDDED_PLAYER 
+2024-10-17T11:37:41.962+08:00  INFO 22388 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : ==================================================
+2024-10-17T11:37:41.963+08:00  INFO 22388 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : !!! DO NOT AUTHORISE WITH YOUR MAIN ACCOUNT, USE A BURNER !!!
+2024-10-17T11:37:41.963+08:00  INFO 22388 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : OAUTH INTEGRATION: To give youtube-source access to your account, go to https://www.google.com/device and enter code VNF-BZM-FYGY
+2024-10-17T11:37:41.965+08:00  INFO 22388 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : !!! DO NOT AUTHORISE WITH YOUR MAIN ACCOUNT, USE A BURNER !!!
+2024-10-17T11:37:41.965+08:00  INFO 22388 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : ==================================================
+2024-10-17T11:37:42.148+08:00  INFO 22388 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2024-10-17T11:37:42.149+08:00  INFO 22388 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2024-10-17T11:37:42.153+08:00  INFO 22388 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-10-17T11:37:42.161+08:00  INFO 22388 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-10-17T11:37:42.202+08:00  WARN 22388 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-10-17T11:37:42.571+08:00  INFO 22388 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2024-10-17T11:37:42.581+08:00  INFO 22388 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2024-10-17T11:37:42.592+08:00  INFO 22388 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2024-10-17T11:37:42.727+08:00  INFO 22388 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2024-10-17T11:37:42.808+08:00  INFO 22388 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 2333 (http) with context path '/'
+2024-10-17T11:37:42.817+08:00  INFO 22388 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 3.76 seconds (process running for 6.306)
+2024-10-17T11:37:42.818+08:00  INFO 22388 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-10-17T11:39:43.547+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T11:39:43.548+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T11:39:43.550+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-17T11:39:43.581+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:53958
+2024-10-17T11:39:43.600+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T11:39:43.661+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T11:39:43.889+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mlus5rdmglrff0dj, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T11:39:43.915+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T11:45:59.933+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mlus5rdmglrff0dj/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "bfcbe0a88ae92a33fb130294eda6bca6", "token": "89bb55151d805629", "endpoint": "singapore11023.discord.media:443"}}
+2024-10-17T11:45:59.946+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:glimpse of us"
+2024-10-17T11:46:00.478+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: glimpse of us
+2024-10-17T11:46:00.496+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:glimpse%20of%20us, client=127.0.0.1
+2024-10-17T11:46:03.100+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mlus5rdmglrff0dj/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA7QMADUdsaW1wc2Ugb2YgVXMABEpvamkAAAAAAAOSEAALRXVpUFJMejhnMlkAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1FdWlQUkx6OGcyWQEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS80UHAyQmo2VWVJZW04OUJwemNrZU9PMnZkejh1ZnhDSjVleXY3M0toazJFemRwN0hiTV9COElKX3FtQmpRb2FNbzB0Vm14LWpNMEdmaTNwOT13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T11:46:04.006+08:00  INFO 22388 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] d.l.y.http.YoutubeAccessTokenTracker     : Updating YouTube visitor id succeeded, new one is CgtmTVJNUEhOTkZvMCj7kMK4BjIKCgJNWRIEGgAgPToMCAEg-efoi7GPoohn, next update will be after 600 seconds.
+2024-10-17T11:46:04.985+08:00  WARN 22388 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Suspicious exception for playback of EuiPRLz8g2Y
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Please sign in
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:102) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.2.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-17T11:48:21.460+08:00  INFO 22388 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/mlus5rdmglrff0dj/players/754373406887116810, client=127.0.0.1
+2024-10-17T11:50:52.682+08:00  INFO 22920 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.0.8 using Java 21.0.4 with PID 22920 (C:\Users\arthu\Desktop\devArthur\DonutBot\Lavalink.jar started by arthu in C:\Users\arthu\Desktop\devArthur\DonutBot)
+2024-10-17T11:50:52.688+08:00  INFO 22920 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T11:50:53.857+08:00  INFO 22920 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version 1.8.3
+2024-10-17T11:50:53.879+08:00  INFO 22920 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded youtube-plugin-1.8.3.jar (16 classes)
+2024-10-17T11:50:54.125+08:00  INFO 22920 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 2.031 seconds (process running for 2.603)
+2024-10-17T11:50:54.202+08:00  INFO 22920 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.8
+	Build time:     20.09.2024 20:20:10 UTC
+	Branch          HEAD
+	Commit:         2946608
+	Commit time:    20.09.2024 20:17:58 UTC
+	JVM:            21.0.4
+	Lavaplayer      2.2.2
+
+2024-10-17T11:50:54.211+08:00  INFO 22920 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-10-17T11:50:54.934+08:00  WARN 22920 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-10-17T11:50:54.956+08:00  INFO 22920 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-10-17T11:50:54.957+08:00  INFO 22920 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 740 ms
+2024-10-17T11:50:56.187+08:00  INFO 22920 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-10-17T11:50:56.601+08:00  INFO 22920 --- [Lavalink] [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_TESTSUITE, WEB, TVHTML5_SIMPLY_EMBEDDED_PLAYER 
+2024-10-17T11:50:56.973+08:00  INFO 22920 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : ==================================================
+2024-10-17T11:50:56.974+08:00  INFO 22920 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : !!! DO NOT AUTHORISE WITH YOUR MAIN ACCOUNT, USE A BURNER !!!
+2024-10-17T11:50:56.974+08:00  INFO 22920 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : OAUTH INTEGRATION: To give youtube-source access to your account, go to https://www.google.com/device and enter code BLHH-FBFN
+2024-10-17T11:50:56.975+08:00  INFO 22920 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : !!! DO NOT AUTHORISE WITH YOUR MAIN ACCOUNT, USE A BURNER !!!
+2024-10-17T11:50:56.976+08:00  INFO 22920 --- [Lavalink] [main] d.l.youtube.http.YoutubeOauth2Handler    : ==================================================
+2024-10-17T11:50:57.169+08:00  INFO 22920 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2024-10-17T11:50:57.170+08:00  INFO 22920 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2024-10-17T11:50:57.174+08:00  INFO 22920 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-10-17T11:50:57.186+08:00  INFO 22920 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-10-17T11:50:57.221+08:00  WARN 22920 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-10-17T11:50:57.574+08:00  INFO 22920 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2024-10-17T11:50:57.583+08:00  INFO 22920 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2024-10-17T11:50:57.596+08:00  INFO 22920 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2024-10-17T11:50:57.704+08:00  INFO 22920 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2024-10-17T11:50:57.792+08:00  INFO 22920 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 2333 (http) with context path '/'
+2024-10-17T11:50:57.800+08:00  INFO 22920 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 3.668 seconds (process running for 6.279)
+2024-10-17T11:50:57.804+08:00  INFO 22920 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-10-17T11:55:04.967+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T11:55:04.968+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T11:55:04.970+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-17T11:55:04.996+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:57382
+2024-10-17T11:55:05.023+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T11:55:05.086+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T11:55:05.342+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T11:55:05.362+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T11:55:50.079+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "e2c5631a1e9214d5d1dbb9afcf70b6d8", "token": "f222333aff80d932", "endpoint": "singapore11023.discord.media:443"}}
+2024-10-17T11:55:50.096+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:glimpse of us"
+2024-10-17T11:55:50.677+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: glimpse of us
+2024-10-17T11:55:50.702+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:glimpse%20of%20us, client=127.0.0.1
+2024-10-17T11:55:53.220+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA7QMADUdsaW1wc2Ugb2YgVXMABEpvamkAAAAAAAOSEAALRXVpUFJMejhnMlkAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1FdWlQUkx6OGcyWQEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS80UHAyQmo2VWVJZW04OUJwemNrZU9PMnZkejh1ZnhDSjVleXY3M0toazJFemRwN0hiTV9COElKX3FtQmpRb2FNbzB0Vm14LWpNMEdmaTNwOT13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T11:55:53.733+08:00  INFO 22920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] d.l.y.http.YoutubeAccessTokenTracker     : Updating YouTube visitor id succeeded, new one is CgtzYVhMcFZsejB3NCjJlcK4BjIKCgJNWRIEGgAgNToMCAEgxNPOl5LZoohn, next update will be after 600 seconds.
+2024-10-17T11:55:54.884+08:00  INFO 22920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda/0x000001e3d386bb80@641f982b
+2024-10-17T11:55:54.893+08:00  INFO 22920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library libmpg123-0: successfully loaded.
+2024-10-17T11:55:54.894+08:00  INFO 22920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library connector: loading with filter null
+2024-10-17T11:55:54.922+08:00  INFO 22920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library connector: successfully loaded.
+2024-10-17T11:56:33.812+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/watch?v=_fFlr8--Fb8"
+2024-10-17T11:56:34.095+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded track wave to earth(웨이브 투 어스) - bad - 핑거스타일 (Fingerstyle Guitar) Arranged By Bin
+2024-10-17T11:56:34.108+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/watch?v%3D_fFlr8--Fb8, client=127.0.0.1
+2024-10-17T11:56:43.185+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": null}}
+2024-10-17T11:56:43.193+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA/wMAYHdhdmUgdG8gZWFydGgo7Juo7J2067iMIO2IrCDslrTsiqQpIC0gYmFkIC0g7ZWR6rGw7Iqk7YOA7J28IChGaW5nZXJzdHlsZSBHdWl0YXIpIEFycmFuZ2VkIEJ5IEJpbgAN67mIKEt3b24gQmluKQAAAAAAA/egAAtfZkZscjgtLUZiOAABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PV9mRmxyOC0tRmI4AQA0aHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9fZkZscjgtLUZiOC9tYXhyZXNkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T11:56:43.694+08:00  WARN 22920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Suspicious exception for playback of _fFlr8--Fb8
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Please sign in
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:102) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.2.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-17T11:57:07.556+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:keshi soft spot"
+2024-10-17T11:57:07.996+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: keshi soft spot
+2024-10-17T11:57:08.000+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:keshi%20soft%20spot, client=127.0.0.1
+2024-10-17T11:57:10.135+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6gMACVNvZnQgU3BvdAAFa2VzaGkAAAAAAAMgyAALdlowSW9nZGlwNDAAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj12WjBJb2dkaXA0MAEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hSXpYTkVscEkxUjlPeE1DdVYwbEgtcUlfN0FzTzJHT3I4U2NZS2llaXpWWTE4WnBtOUY5b1MzV2N6R19jdmNlX0NZV1V6Zlc0OWJxUDNzaD13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T11:57:29.135+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"volume": 100}
+2024-10-17T11:57:47.858+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"volume": 50}
+2024-10-17T11:58:01.311+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"volume": 30}
+2024-10-17T11:58:14.042+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"volume": 100}
+2024-10-17T11:59:38.268+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "https://www.youtube.com/playlist?list=PLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq"
+2024-10-17T11:59:38.377+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Keshi - Requiem Album
+2024-10-17T11:59:38.392+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=https://www.youtube.com/playlist?list%3DPLC5SJ2OcjUf7zuHNh8e0OiYAwDjm-PhZq, client=127.0.0.1
+2024-10-17T12:00:34.868+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtQMAImtlc2hpIC0gQW1lbiAoT2ZmaWNpYWwgVmlzdWFsaXplcikABWtlc2hpAAAAAAAA8jAACzhFS0M1MUtNdkkwAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9OEVLQzUxS012STABADBodHRwczovL2kueXRpbWcuY29tL3ZpLzhFS0M1MUtNdkkwL21xZGVmYXVsdC5qcGcAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 100, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T12:00:35.296+08:00  WARN 22920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Suspicious exception for playback of 8EKC51KMvI0
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Please sign in
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:102) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.2.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-17T12:00:35.323+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtgMAI2tlc2hpIC0gTmlnaHQgKE9mZmljaWFsIFZpc3VhbGl6ZXIpAAVrZXNoaQAAAAAAArs4AAtqNUplcU5BbnBWRQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWo1SmVxTkFucFZFAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9qNUplcU5BbnBWRS9tcWRlZmF1bHQuanBnAAAHeW91dHViZQAAAAAAAAAA", "userData": {}}, "volume": 100, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T12:00:35.702+08:00  WARN 22920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Suspicious exception for playback of j5JeqNAnpVE
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Please sign in
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:102) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.2.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-17T12:00:35.723+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAugMAJ2tlc2hpIC0gTGlrZSBUaGF0IChPZmZpY2lhbCBWaXN1YWxpemVyKQAFa2VzaGkAAAAAAAK7OAALeklydHE3VmxKdGcAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj16SXJ0cTdWbEp0ZwEAMGh0dHBzOi8vaS55dGltZy5jb20vdmkveklydHE3VmxKdGcvbXFkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 100, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T12:03:34.675+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtgMAI2tlc2hpIC0gVGV4YXMgKE9mZmljaWFsIFZpc3VhbGl6ZXIpAAVrZXNoaQAAAAAAAuJIAAtLRThjMjNyOVBMSQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PUtFOGMyM3I5UExJAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9LRThjMjNyOVBMSS9tcWRlZmF1bHQuanBnAAAHeW91dHViZQAAAAAAAAAA", "userData": {}}, "volume": 100, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T12:06:43.994+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtAMAIWtlc2hpIC0gV2FyIChPZmZpY2lhbCBWaXN1YWxpemVyKQAFa2VzaGkAAAAAAAMsgAALSUQzMVhiTjNxTW8AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1JRDMxWGJOM3FNbwEAMGh0dHBzOi8vaS55dGltZy5jb20vdmkvSUQzMVhiTjNxTW8vbXFkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 100, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T12:06:44.381+08:00  WARN 22920 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Suspicious exception for playback of ID31XbN3qMo
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Please sign in
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:102) ~[jar:file:C:\Users\arthu\Desktop\devArthur\DonutBot\.\plugins\youtube-plugin-1.8.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.2.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.2.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-17T12:06:44.411+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAAtwMAJGtlc2hpIC0gQm9kaWVzIChPZmZpY2lhbCBWaXN1YWxpemVyKQAFa2VzaGkAAAAAAAMksAALZGVpMVNnZmFRLUUAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kZWkxU2dmYVEtRQEAMGh0dHBzOi8vaS55dGltZy5jb20vdmkvZGVpMVNnZmFRLUUvbXFkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 100, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T12:07:53.697+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810, client=127.0.0.1
+2024-10-17T12:08:00.117+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "e2c5631a1e9214d5d1dbb9afcf70b6d8", "token": "044996d1d70492a6", "endpoint": "singapore11023.discord.media:443"}}
+2024-10-17T12:08:00.121+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:war keshi"
+2024-10-17T12:08:00.666+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: war keshi
+2024-10-17T12:08:00.672+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:war%20keshi, client=127.0.0.1
+2024-10-17T12:08:03.125+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA5AMAA1dhcgAFa2VzaGkAAAAAAAM0UAALRWRKd2RTOVY0RFkAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1FZEp3ZFM5VjREWQEAfmh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hSXpYTkVscEkxUjlPeE1DdVYwbEgtcUlfN0FzTzJHT3I4U2NZS2llaXpWWTE4WnBtOUY5b1MzV2N6R19jdmNlX0NZV1V6Zlc0OWJxUDNzaD13MTAwMC1oMTAwMAAAB3lvdXR1YmUAAAAAAAAAAA==", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T12:08:47.950+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:wave to earth bad"
+2024-10-17T12:08:48.358+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: wave to earth bad
+2024-10-17T12:08:48.364+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:wave%20to%20earth%20bad, client=127.0.0.1
+2024-10-17T12:08:55.194+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:soft spot keshi"
+2024-10-17T12:08:55.653+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: soft spot keshi
+2024-10-17T12:08:55.656+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:soft%20spot%20keshi, client=127.0.0.1
+2024-10-17T12:08:59.699+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": null}}
+2024-10-17T12:08:59.971+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6wMAA2JhZAANd2F2ZSB0byBlYXJ0aAAAAAAABAdAAAtFQXlZM194V1pZWQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PUVBeVkzX3hXWllZAQB9aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tLzJtdXJ5Mk04QzBPNzhVVG9LcUxibnZ6bm9DckltLUJ6ZURWM2xXZHRhcnRDanFYWXlQdS0wWTFLQldVTE1RZmtISTFRQmlTUkhTdTNONzQ9dzEwMDAtaDEwMDAAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 10, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T12:10:07.436+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"volume": 50}
+2024-10-17T12:11:04.548+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/67rf9ftlyegkdw7i/players/754373406887116810, client=127.0.0.1
+2024-10-17T12:11:15.832+08:00  INFO 22920 --- [Lavalink] [XNIO-1 I/O-8] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:57382 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id 67rf9ftlyegkdw7i
+2024-10-17T12:11:27.398+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:62173
+2024-10-17T12:11:27.400+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=127.0.0.1
+2024-10-17T12:11:27.401+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Wavelink/3.4.1
+2024-10-17T12:11:27.406+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/dw5az3bwn5xcaqar, client=127.0.0.1, payload={"resuming": true, "timeout": 60}
+2024-10-17T12:11:27.410+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/info, client=127.0.0.1
+2024-10-17T12:11:45.526+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/dw5az3bwn5xcaqar/players/754373406887116810?noReplace=True, client=127.0.0.1, payload={"voice": {"sessionId": "adf1b624db86604fb0ad2cd3f735fa22", "token": "932efb2b0cf6c864", "endpoint": "singapore11023.discord.media:443"}}
+2024-10-17T12:11:45.530+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytmsearch:bad wave to earth"
+2024-10-17T12:11:45.984+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search music results for: bad wave to earth
+2024-10-17T12:11:45.986+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytmsearch:bad%20wave%20to%20earth, client=127.0.0.1
+2024-10-17T12:11:47.973+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/dw5az3bwn5xcaqar/players/754373406887116810?noReplace=False, client=127.0.0.1, payload={"track": {"encoded": "QAAA6wMAA2JhZAANd2F2ZSB0byBlYXJ0aAAAAAAABAdAAAtFQXlZM194V1pZWQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PUVBeVkzX3hXWllZAQB9aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tLzJtdXJ5Mk04QzBPNzhVVG9LcUxibnZ6bm9DckltLUJ6ZURWM2xXZHRhcnRDanFYWXlQdS0wWTFLQldVTE1RZmtISTFRQmlTUkhTdTNONzQ9dzEwMDAtaDEwMDAAAAd5b3V0dWJlAAAAAAAAAAA=", "userData": {}}, "volume": 50, "position": 0, "endTime": null, "paused": false, "filters": {"equalizer": [{"band": 0, "gain": 0.0}, {"band": 1, "gain": 0.0}, {"band": 2, "gain": 0.0}, {"band": 3, "gain": 0.0}, {"band": 4, "gain": 0.0}, {"band": 5, "gain": 0.0}, {"band": 6, "gain": 0.0}, {"band": 7, "gain": 0.0}, {"band": 8, "gain": 0.0}, {"band": 9, "gain": 0.0}, {"band": 10, "gain": 0.0}, {"band": 11, "gain": 0.0}, {"band": 12, "gain": 0.0}, {"band": 13, "gain": 0.0}, {"band": 14, "gain": 0.0}]}}
+2024-10-17T12:12:15.841+08:00  INFO 22920 --- [Lavalink] [pool-2-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-10-17T12:13:39.629+08:00  INFO 22920 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/dw5az3bwn5xcaqar/players/754373406887116810, client=127.0.0.1
+2024-10-17T12:13:49.650+08:00  INFO 22920 --- [Lavalink] [XNIO-1 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:62173 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with id dw5az3bwn5xcaqar
