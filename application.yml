@@ -11,8 +11,7 @@ plugins:
       enabled: true
 
       # if you have a refresh token, you may set it below (make sure to uncomment the line to apply it).
-      # setting a valid refresh token will skip the OAuth flow entirely. See above note on how to retrieve
-      # your refreshToken.
+      # setting a valid refresh token will skip the OAuth flow entirely.
       # refreshToken: "paste your refresh token here if applicable"
 
       # Set this if you don't want the OAuth flow to be triggered, if you intend to supply a refresh token later.
