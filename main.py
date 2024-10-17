@@ -308,6 +308,7 @@ async def test(ctx: commands.Context, query=None):
             await ctx.send(f"Hello, there {ctx.author.mention}! Your number is: {query}.")
         else:
             await ctx.send(f"Hello, there {ctx.author.mention}! Your query is: {query}.")
+    await ctx.message.add_reaction("\u2705")
 
 
 async def main() -> None:
