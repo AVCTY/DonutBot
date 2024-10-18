@@ -1,14 +1,14 @@
 import json
 import asyncio
 import logging
+
+import discord
+import wavelink
+
 from typing import cast
 from time_converter import ms_convert
 from queue_menu import QueueMenu
-
-import discord
 from discord.ext import commands
-
-import wavelink
 
 
 with open("secrets.json", "r") as f:
@@ -38,6 +38,7 @@ class Bot(commands.Bot):
 
     async def on_wavelink_track_start(self, payload: wavelink.TrackStartEventPayload) -> None:
         player: wavelink.Player | None = payload.player
+        
         if not player:
             # Handle edge cases...
             return
@@ -47,6 +48,7 @@ class Bot(commands.Bot):
 
         embed: discord.Embed = discord.Embed(title="Now Playing")
         embed.description = f"**[{track.title}]({track.uri})**  - *{ms_convert(track.length)}* by `{track.author}`"
+        embed.set_footer(text="Powered by Donuts™")
 
         if track.artwork:
             embed.set_thumbnail(url=track.artwork)
@@ -62,14 +64,13 @@ class Bot(commands.Bot):
 
 bot: Bot = Bot()
 
+
 # Play command
 @bot.command()
 async def play(ctx: commands.Context, *, query: str) -> None:
-    if not ctx.guild:
-        return
+    if not ctx.guild: return
     
-    player: wavelink.Player
-    player = cast(wavelink.player, ctx.voice_client)
+    player: wavelink.Player = cast(wavelink.player, ctx.voice_client)
 
     if not player:
         try:
@@ -122,7 +123,7 @@ async def play(ctx: commands.Context, *, query: str) -> None:
             # song_length[0] is minutes and song_length[1] is seconds
             song_length = ms_convert(song.length)
 
-            message += f"**{index+1}**. **{song.title}** - *{song_length}*\n"
+            message += f"{index+1}. `{song.title}` - *{song_length}* by `{song.author}`\n"
 
         message += "\nEnter a number for the song you want to choose:"
         await ctx.send(message)
@@ -149,6 +150,32 @@ async def play(ctx: commands.Context, *, query: str) -> None:
         await player.play(player.queue.get(), volume=50)
 
 
+# Now playing command
+@bot.command(aliases=["np"])
+async def nowplaying(ctx: commands.Context) -> None:
+    """Shows the current song that the Player is playing"""
+    player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+
+    if not player: return
+
+    if player.playing:
+        track: wavelink.Playable = player.current
+
+        embed: discord.Embed = discord.Embed(title="Now Playing")
+        embed.description = f"**[{track.title}]({track.uri})**  - *{ms_convert(track.length)}* by `{track.author}`"
+        embed.set_footer(text="Powered by Donuts™")
+
+        if track.artwork:
+            embed.set_thumbnail(url=track.artwork)
+
+        if track.album.name:
+            embed.add_field(name="Album", value=track.album.name)
+
+        await player.home.send(embed=embed)
+    else:
+        await ctx.send("Nothing is playing right now.")
+
+
 # View the Player Queue command
 @bot.command(aliases=["q"])
 async def queue(ctx: commands.Context) -> None:
@@ -156,8 +183,7 @@ async def queue(ctx: commands.Context) -> None:
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
     tracks = []
 
-    if not player:
-        return
+    if not player: return
     
     # check if queue exists
     if player.queue:
@@ -235,8 +261,8 @@ async def clear(ctx: commands.Context):
 async def skip(ctx: commands.Context) -> None:
     """Skip the current song."""
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
-    if not player:
-        return
+    
+    if not player: return
 
     await player.skip(force=True)
     await ctx.message.add_reaction("\u2705")
@@ -248,8 +274,7 @@ async def pause(ctx: commands.Context) -> None:
     """Pause the Player depending on its current state."""
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
 
-    if not player:
-        return
+    if not player: return
     
     if player.paused == False:
         await player.pause(True)
@@ -264,8 +289,7 @@ async def resume(ctx: commands.Context) -> None:
     """Resume the Player depending on its current state."""
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
 
-    if not player:
-        return
+    if not player: return
     
     if player.paused == True:
         await player.pause(False)
@@ -279,8 +303,8 @@ async def resume(ctx: commands.Context) -> None:
 async def volume(ctx: commands.Context, value: int) -> None:
     """Change the volume of the player."""
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
-    if not player:
-        return
+    
+    if not player: return
 
     await player.set_volume(value)
     await ctx.message.add_reaction("\u2705")
@@ -291,10 +315,49 @@ async def volume(ctx: commands.Context, value: int) -> None:
 async def disconnect(ctx: commands.Context) -> None:
     """Disconnect the Player."""
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
-    if not player:
-        return
+    message = "Bot has been successfully disconnected."
+    
+    if not player: return
+
+    if not player.queue.is_empty:
+        player.queue.clear()
+        message = "Queue has been cleared. Bot has been successfully disconnected."
 
     await player.disconnect()
+    await ctx.send(message)
+    await ctx.message.add_reaction("\u2705")
+
+
+# Reset filter command
+@bot.command()
+async def reset(ctx: commands.Context):
+    """Resets the currently applied filter on the player"""
+    player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+
+    if not player: return
+
+    # Reset all filters...
+    filters: wavelink.Filters = player.filters
+    filters.reset()
+
+    await player.set_filters(filters)
+    await ctx.send("All filters have been reset.")
+    await ctx.message.add_reaction("\u2705")
+
+
+# Nightcore sound profile filter command
+@bot.command(aliases=["nc"])
+async def nightcore(ctx: commands.Context):
+    """Set the filter to a nightcore style."""
+    player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
+
+    if not player: return
+
+    filters: wavelink.Filters = player.filters
+    filters.timescale.set(pitch=1.2, speed=1.2, rate=1)
+
+    await player.set_filters(filters)
+    await ctx.send("Applied nightcore filter")
     await ctx.message.add_reaction("\u2705")
 
 
