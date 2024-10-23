@@ -46,6 +46,7 @@ class Bot(commands.Bot):
         original: wavelink.Playable | None = payload.original
         track: wavelink.Playable = payload.track
 
+        # embed messages for the now playing track when a new track starts
         embed: discord.Embed = discord.Embed(title="Now Playing")
         embed.description = f"**[{track.title}]({track.uri})**  - *{ms_convert(track.length)}* by `{track.author}`"
         embed.set_footer(text="Powered by Donuts™")
@@ -83,8 +84,8 @@ async def play(ctx: commands.Context, *, query: str) -> None:
             return
         
     # Turn on AutoPlay
-    # enabled = AutoPlay will automatically play songs in the queue and fetch recommendations after queue finishes
-    # partial = AutoPlay will automatically play songs in the queue but will not fetch recommendations after queue finishes
+    # enabled  = AutoPlay will automatically play songs in the queue and fetch recommendations after queue finishes
+    # partial  = AutoPlay will automatically play songs in the queue but will not fetch recommendations after queue finishes
     # disabled = AutoPlay will do nothing
     player.autoplay = wavelink.AutoPlayMode.partial # set to only play songs in queue without fetching recommendations after
 
@@ -205,8 +206,7 @@ async def queue(ctx: commands.Context) -> None:
 async def top(ctx: commands.Context, index: int = 0):
     """
     Sets the requested song from queue to the top of the queue
-    
-    E.g: top(3) brings the third song in queue to the top
+    \nE.g: `top(3)` brings the third song in queue to the top
     """
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
 
@@ -259,7 +259,10 @@ async def clear(ctx: commands.Context):
 # Skip song command
 @bot.command()
 async def skip(ctx: commands.Context) -> None:
-    """Skip the current song."""
+    """Skip the current song.
+    \nThis will only skip to the next song in the queue.
+    \nSpecific order skipping will not be supported.
+    """
     player: wavelink.Player = cast(wavelink.Player, ctx.voice_client)
     
     if not player: return
